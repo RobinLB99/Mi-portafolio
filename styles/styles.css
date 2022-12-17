@@ -166,7 +166,6 @@ ul li {
 }
 
 .link {
-    display: flex;
     width: 200px;
     padding: 10px;
     border-radius: 5px;
@@ -176,6 +175,13 @@ ul li {
 
 .link:hover {
     background-color: #f4f4f43c;
+}
+
+.content_elements {
+    display: flex;
+    width: fit-content;
+    padding-right: 25px;
+    margin: 0 auto;
 }
 
 .link .icons_contact {
@@ -188,11 +194,11 @@ ul li {
 
 
 footer {
-    display: flex;
-    background-color: #222537;
     height: 50px;
+    background-color: #222537;
+    display: flex;
     justify-content: end;
-
+    align-items: center;
 }
 
 footer .des_footer {
