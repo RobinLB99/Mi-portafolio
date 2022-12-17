@@ -9,45 +9,104 @@
 </head>
 <body>
     <header class="acceso">
-        <a class="enlace_menu" href="#start">Inicio</a>
-        <a class="enlace_menu" href="#about">Acerca de mi</a>
-        <a class="enlace_menu" href="#contact">Contacto</a>
+        <a class="enlace_menu" href="#home">Home</a>
+        <a class="enlace_menu" href="#about_me">About me</a>
+        <a class="enlace_menu" href="#portafolio">Portafolio</a>
+        <a class="enlace_menu" href="#contact" >Contact</a>
+        <a class="enlace_menu" href="./curriculum.html" target="_blank">Curriculum</a>
     </header>
     <main>
-        <div class="inicio" id="start">
-                <h1>Bienvenido a mi primera pagina web</h1>
+        <div class="home" id="home">
+            <div class="presentation">
+                <h1 class="greeting">Hello, I'm Robin!</h1>
+                <p class="invitation">If you want to know about me, keep looking.</p>
+            </div>
+           <img class="perfil_photo" src="./img/Perfil/robin_photo.jpg" alt="Photo">
         </div>
-        <div id="about">
-            <h2>Acerca de mi:</h2>
-            <div class="acercade">
-                <img src="./img/Perfil/robin_photo.jpg" alt="foto de perfil">
-                <div class="datos">
-                    <p><strong>Hola, soy Robin</strong></p>
-                    <p>Me apaciona el mundo de la informatica y la tecnologia.</p>
-                    <p>Actualmente estoy por terminar mi carrera en Tecnologia en Redes y Telecomunicaciones. Adicionamelmente, tambien estoy aprendiendo sobre desarrollo frontEnd con HTML, CSS y Javascript.</p>
+        <div class="about_me" id="about_me">
+            <div class="my_information">
+                <p>The world of informatics and technology fascinates me.<br>I am currently about to finish my degree in Network and Telecommunications Technology. Additionally, I'm also learning about frontend development with HTML, CSS and Javascript, but that won't be all.</p>
+            </div>
+        </div>
+        <div class="sec_portafolio" id="portafolio">
+            <h2 class="my_projects">Look at my projects</h2>
+            <div class="sub"></div>
+            <div class="portafolio">
+                <div class="project">
+                    <figure>
+                        <h3>Quiz</h3>
+                        <img class="img-project" src="./img/Projects/quiz.png" alt="quiz">
+                        <ul class="tecnologys">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <figcaption class="description">Survey developed as part of the FreeCodeCamp project.</figcaption>
+                    </figure>
+                </div>
+                <div class="project">
+                    <figure>
+                        <h3>Tribute Page</h3>
+                        <img class="img-project" src="./img/Projects/tribute-page.png" alt="tribute-page">
+                        <ul class="tecnologys">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <figcaption class="description">Tribute page dedicated to Norman Borlaug as part of the FreeCodeCamp project.</figcaption>
+                    </figure>
+                </div>
+                <div class="project">
+                    <figure>
+                        <h3>Parallax Website</h3>
+                        <img class="img-project" src="./img/Projects/parallax-website.png" alt="parallax-website">
+                        <ul class="tecnologys">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <figcaption class="description">Personal project developed as an initiative to put into practice the concepts learned.</figcaption>
+                    </figure>
+                </div>
+                <div class="project">
+                    <figure>
+                        <h3>Portafolio</h3>
+                        <img class="img-project" src="./img/Projects/portafolio.png" alt="portafolio">
+                        <ul class="tecnologys">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <figcaption class="description">Personal portfolio that you see on the screen.</figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
-        <div class="contacto" id="contact">
-            <h2>Contactame por:</h2>
-            <div class="redes">
-                <a class="icon" id="instagram" href="https://www.instagram.com/lrobinb99/" target="_blank">
-                    <img src="./img/Icons/instagram-2-1-logo-svgrepo-com.svg" alt="Intagram">
-                    <p>Instagram</p>
-                </a>
-                <a class="icon" id="twitter" href="https://twitter.com/BoeroLugo" target="_blank">
-                    <img src="./img/Icons/twitter-svgrepo-com.svg" alt="Twitter">
-                    <p>Twitter</p>
-                </a>
-                <a class="icon" id="email" href="mailto:RJLB991102@hotmail.com" target="_blank">
-                    <img src="./img/Icons/email-svgrepo-com.svg" alt="Correo">
-                    <p>Email</p>
-                </a>
+        <div class="contact" id="contact">
+            <div class="content">
+                <h2 class="contact_me">Contact me by</h2>
+                <div class="sub"></div>
+                <div class="links">
+                    <a class="link" href="https://twitter.com/BoeroLugo" target="_blank">
+                        <div class="content_elements">
+                            <img src="./img/Icons/twitter-svgrepo-com.svg" alt="Twitter" class="icons_contact">
+                            <p class="des_icon">Twitter</p>
+                        </div>
+                    </a>
+                    <a class="link" href="https://www.instagram.com/lrobinb99/" target="_blank">
+                        <div class="content_elements">
+                            <img src="./img/Icons/instagram-2-1-logo-svgrepo-com.svg" alt="Instagram" class="icons_contact">
+                            <p class="des_icon">Instagram</p>
+                        </div>
+                    </a>
+                    <a class="link" href="mailto:RJLB991102@hotmail.com" target="_blank">
+                        <div class="content_elements">
+                            <img src="./img/Icons/email-svgrepo-com.svg" alt="email"class="icons_contact">
+                            <p class="des_icon">E-mail</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        <p>By RobinLB99</p>
+        <p class="des_footer">By RobinLB99</p>
     </footer>
 </body>
 </html>
