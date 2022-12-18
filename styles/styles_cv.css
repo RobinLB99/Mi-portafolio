@@ -17,15 +17,17 @@ h1 {
 
 fieldset {
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #f5f7fa;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    padding-top: 15px;
 }
 
 .personal, .contact, .studies, .work_experience, .reference {
-    margin: 10px 0;
-    padding: 10PX;
+    margin: 0 5px 15px 5px;
+    padding: 10px 25px;
     background-color: #FFF;
+    border-radius: 10px;
 }
 
 main {
