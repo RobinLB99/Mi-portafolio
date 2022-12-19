@@ -12,26 +12,33 @@ body {
 
 h1 {
     width: fit-content;
-    margin: 20px auto;
+    padding: 20px 0;
+    margin: 0 auto;
 }
 
 fieldset {
     border: none;
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: #f5f7fa;
     margin-bottom: 25px;
     padding-top: 15px;
+}
+
+.references_ {
+    margin-bottom: 0;
 }
 
 .personal, .contact, .studies, .work_experience, .reference {
     margin: 0 5px 15px 5px;
     padding: 10px 25px;
     background-color: #FFF;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
-main {
+.cv {
+    background-color: #e2e6e9;
     margin: 0 auto;
     min-width: 10em;
     max-width: 35em;
+    padding: 10px 20px;
 }
