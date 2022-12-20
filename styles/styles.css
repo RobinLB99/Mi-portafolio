@@ -9,6 +9,7 @@ html, body{
     /*box-sizing: border-box;*/
     color: #f4f4f4;
     box-sizing: border-box;
+    overflow-y: hidden;
 }
 
 .acceso {
@@ -36,10 +37,6 @@ html, body{
     background-color: rgba(255, 255, 255, 0.053);
 }
 
-main {
-    display: grid;
-}
-
 .home {
     display: flex;
     justify-content: center;
@@ -47,6 +44,7 @@ main {
     text-align: right;
     margin: 0;
     height: 100vh;
+    width: 100%;
 }
 
 .home, .sec_projects {
@@ -86,7 +84,9 @@ main {
 }
 
 .sec_projects {
-    padding: 80px 0;
+    padding: 60px 0;
+    display: block;
+    height: 100vh;
 }
 
 .my_projects {
@@ -100,18 +100,27 @@ main {
     margin-bottom: 60px;
 }
 
+.s1 {
+    margin-bottom: 0;
+}
+
 .my_projects, .sub {
     margin-left: auto;
     margin-right: auto;
 }
 
-.card_project {
+.cards_projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 16px;
+    width: 80%;
+    height: 65%;
+    overflow-y: scroll;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 figure {
@@ -122,10 +131,12 @@ figure {
     border-radius: 5px;
     width: 20em;
     margin: 0;
+    transition-duration: 0.3s;
 }
 
 figure:hover {
     backdrop-filter: blur(20px);
+    transition-duration: 0.3s;
 }
 
 .img-project {
@@ -171,10 +182,12 @@ ul li {
     border-radius: 5px;
     color: #f4f4f4;
     text-decoration: none;
+    transition-duration: 0.3s;
 }
 
 .link:hover {
     background-color: #f4f4f43c;
+    transition-duration: 0.3s;
 }
 
 .content_elements {
