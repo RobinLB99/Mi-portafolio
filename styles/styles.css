@@ -182,10 +182,12 @@ ul li {
     border-radius: 5px;
     color: #f4f4f4;
     text-decoration: none;
+    transition-duration: 0.3s;
 }
 
 .link:hover {
     background-color: #f4f4f43c;
+    transition-duration: 0.3s;
 }
 
 .content_elements {
