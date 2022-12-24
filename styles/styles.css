@@ -273,7 +273,6 @@ header {
 }
 
 .container_cv {
-    border: 1px solid;
     width: 50%;
     height: 50%;
     display: grid;
@@ -291,6 +290,7 @@ header {
     font-size: large;
     font-weight: bold;
     font-style: italic;
+    text-align: center;
 }
 
 .container_cv .cv p {
