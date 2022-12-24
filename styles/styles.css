@@ -291,15 +291,15 @@ header {
     font-weight: bold;
     font-style: italic;
     text-align: center;
+    transition-duration: 0.3s;
 }
 
 .container_cv .cv p {
     width: fit-content;
     margin: 0 auto;
-    transition-duration: 0.3s;
 }
 
-.container_cv .cv:hove {
+.container_cv .cv:hover {
     backdrop-filter: blur(15px);
     transition-duration: 0.3s;
 }
