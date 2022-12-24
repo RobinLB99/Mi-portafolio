@@ -8,27 +8,82 @@
     <title>Mi primera pagina web</title>
 </head>
 <body>
-    <header class="acceso">
-        <a class="enlace_menu" href="#home">Home</a>
-        <a class="enlace_menu" href="#about_me">About me</a>
-        <a class="enlace_menu" href="#portafolio">Portafolio</a>
-        <a class="enlace_menu" href="#contact" >Contact</a>
-        <a class="enlace_menu" href="./curriculum.html" target="_blank">Curriculum</a>
+    <!-- Header -->
+    <header class="nav">
+        <!--
+        <div class="buttom">
+            <div class="content">
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </div>
+        -->
+        <div class="menu">
+            <a href="#home" id="a_home">
+                <img src="./img/Icons/house-solid.svg" alt="Home">
+            </a>
+            <a href="#about_me" id="a_about">
+                <img src="./img/Icons/address-card-solid.svg" alt="about me">
+            </a>
+            <a href="#projects" id="a_projects">
+                <img src="./img/Icons/suitcase-solid.svg" alt="projects">
+            </a>
+            <a href="#contact" id="a_contacts">
+                <img src="./img/Icons/message-solid.svg" alt="Contact me">
+            </a>
+            <a href="about:blank" id="a_curriculum" target="_blank">
+                <img src="./img/Icons/file-solid.svg" alt="Curriculum">
+            </a>
+        </div>
+        <!--
+        <div class="configuration">
+            <img src="./img/configuration.png" alt="">
+        </div>
+        -->
     </header>
+    <!-- Contenido -->
     <main>
         <div class="home" id="home">
-            <div class="presentation">
-                <h1 class="greeting">Hello, I'm Robin!</h1>
-                <p class="invitation">If you want to know about me, keep looking.</p>
-            </div>
-           <img class="perfil_photo" src="./img/Perfil/robin_photo.jpg" alt="Photo">
+           <div class="content_home">
+                <div class="presentation">
+                    <h1 class="greeting">Hello, I'm Robin!</h1>
+                    <p class="invitation">If you want to know about me, keep looking.</p>
+                </div>
+                <img class="perfil_photo" src="./img/Perfil/robin_photo.jpg" alt="Photo">
+           </div>
+           <div class="nav_buttons">
+                <a href="#about_me">
+                    <img src="./img/Icons/caret-down-square-fill.svg" alt="Down">
+                </a>
+           </div>
         </div>
         <div class="about_me" id="about_me">
-            <div class="my_information">
-                <p>The world of informatics and technology fascinates me.<br>I am currently about to finish my degree in Network and Telecommunications Technology. Additionally, I'm also learning about frontend development with HTML, CSS and Javascript, but that won't be all.</p>
+            <div class="content_about">
+                <div class="my_information">
+                    <p>The world of informatics and technology fascinates me.<br>I am currently about to finish my degree in Network and Telecommunications Technology. Additionally, I'm also learning about frontend development with HTML, CSS and Javascript, but that won't be all.</p>
+                </div>
+            </div>
+            <div class="nav_buttons">
+                <a href="#home">
+                    <img src="./img/Icons/caret-up-square-fill.svg" alt="Up">
+                </a>
+                <a href="#projects">
+                    <img src="./img/Icons/caret-down-square-fill.svg" alt="Down">
+                </a>
+           </div>
+        </div>
+
+        <div class="sec_projects" id="projects">
+            <h2 class="title_sec3">Look at my projects</h2>
+            <div class="sub"></div>.
+            <div class="projects">
+
             </div>
         </div>
-        <div class="sec_portafolio" id="portafolio">
+        <!--
+        
+        <div class="sec_portafolio" id="projects">
             <h2 class="my_projects">Look at my projects</h2>
             <div class="sub"></div>
             <div class="portafolio">
@@ -104,6 +159,8 @@
                 </div>
             </div>
         </div>
+        -->
+        
     </main>
     <footer>
         <p class="des_footer">By RobinLB99</p>
