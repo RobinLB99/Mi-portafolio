@@ -68,25 +68,15 @@
         padding: 0 10px;
     }
 
-    .projects h3 {
-        width: fit-content;
-        margin: 0 auto;
-    }
-
-    .projects_container {
-        width: calc(100% - 30px);
-        height: calc(100% - 55px);
-        margin: 0 auto;
-
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
     .card {
         background-color: #81818165;
     }
 
     .card:hover {
         backdrop-filter: none;
+    }
+
+    a[class="link"]:hover {
+        background-color: unset;
     }
 }
