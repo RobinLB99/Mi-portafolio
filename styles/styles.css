@@ -8,6 +8,7 @@ html, body{
     background-color: #18181a;
     color: #f4f4f4;
     scroll-behavior: smooth;
+    text-shadow: #18181a 2px 2px 3px;
 }
 
 .navbar {
@@ -25,6 +26,12 @@ html, body{
 
 .seccion {
     height: 100vh;
+}
+
+.line {
+    width: 50%;
+    border: 1px solid;
+    margin: 5px auto 0 auto;
 }
 
 .home, .projects {
@@ -59,6 +66,19 @@ html, body{
     border-radius: 50%;
 }
 
+/* About me section*/
+.about_me {
+    display: grid;
+    place-items: center;
+}
+
+#about_me_parragraf {
+    border: 5px solid;
+    padding: 20px;
+    width: calc(100% - 100px);
+    height: auto;
+}
+
 .container_seccion_projects {
     height: 100%;
     padding-top: 15px;
@@ -78,21 +98,28 @@ html, body{
     width: 300px;
     height: 350px;
     padding: 20px;
-    background-color: #f4f4f418;
+    background-color: #f4f4f423;
     transition-duration: 0.3s;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 .card:hover {
-    backdrop-filter: blur(15px);
+    background-color: #f4f4f446;
     transition-duration: 0.3s;
-    border: 1px solid white;
+    border: 2px solid white;
+}
+
+.card h4 {
+    text-shadow: none;
 }
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 130px;
     margin: 10px 0;
+    border-radius: 4px;
 }
 
 .card ul {
@@ -100,6 +127,7 @@ html, body{
     flex-direction: row;
     gap: 10px;
     padding: 0;
+    text-shadow: none;
 }
 
 .card ul li {
@@ -121,6 +149,8 @@ html, body{
     align-items: center;
     height: 40px;
     gap: 10px;
+    height: 40px;
+    border-radius: 4px;
 }
 
 .botones a {
@@ -129,21 +159,22 @@ html, body{
     width: 120px;
     height: 100%;
     gap: 10px;
-    background-color: #f4f4f462;
+    background-color: #ffffff88;
     color: black;
     transition-duration: 0.3s;
     padding: 5px 10px;
     border-radius: 4px;
     text-decoration: none;
+    text-shadow: none;
 }
 
 .botones a:hover {
     transition-duration: 0.3s;
-    background-color: #f4f4f4c9;
+    background-color: #edf6ff;
 }
 
 .botones > a > img {
-    width: 30px;
+    width: 23px;
     height: auto;
 }
 
@@ -151,105 +182,52 @@ html, body{
     width: fit-content;
 }
 
-@media (max-width:480px) {
-    body {
-        overflow-y: hidden;
-    }
-
-    .navbar {
-        width: 100%;
-        height: 50px;
-    }
-
-    .navbar {
-        position: fixed;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .menu a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
-    .menu > a > img {
-        width: auto;
-        height: 55%;
-    }
-
-    .menu > a > p {
-        display: none;
-    }
-
-    .border, .separador {
-        display: none;
-    }
-
-    .container-logo {
-        display: none;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: fit-content;
-    }
-
-    .menu > a {
-        height: 100%;
-        padding: 0 15px;
-    }
-
-    .home {
-        padding-bottom: 50px;
-    }
-
-    .container_home {
-        text-align: center;
-        text-shadow: #24292e 2px 2px 5px;
-    }
-
-    .presentation {
-        padding: 0 10px;
-    }
-
-    .projects {
-        padding-bottom: 50px;
-    }
-
-    .projects h3 {
-        width: fit-content;
-        margin: 0 auto;
-    }
-
-    .projects .line {
-        width: 50%;
-        border: 1px solid;
-        margin: 5px auto 0 auto;
-    }
-
-    .projects_container {
-        width: calc(100% - 30px);
-        height: calc(100% - 55px);
-        margin: 0 auto;
-
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .card {
-        background-color: #81818165;
-    }
-
-    .card:hover {
-        backdrop-filter: none;
-    }
+/*Contact me Section*/
+.contact_me {
+    display: grid;
+    place-items: center;
 }
+
+.container_contact {
+    width: calc(100% - 100px);
+}
+
+.links {
+    width: calc(100% - 10px);
+    margin: 10px auto 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+a[class="link"] {
+    width: 150px;
+    text-decoration: none;
+    color: #edf6ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition-duration: .3s;
+}
+
+a[class="link"]:hover {
+    background-color: #edf6ff4f;
+    transition-duration: .3s;
+}
+
+a[class="link"] > img {
+    width: 48px;
+    height: 48px;
+}
+
+a[class="link"] > p {
+    height: fit-content;
+}
+
