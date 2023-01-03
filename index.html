@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/display_max_480px.css">
     <title>Robin Lugo Boero</title>
 </head>
 <body>
@@ -15,19 +16,19 @@
         </div>
         <div class="separador"></div>
         <div class="menu">
-            <a href="#home" class="link">
+            <a href="#home" class="link_nav">
                 <img src="./img/Icons/house-solid.svg" alt="home">
                 <p>Home</p>
             </a>
-            <a href="#about_me" class="link">
+            <a href="#about_me" class="link_nav">
                 <img src="./img/Icons/address-card-solid.svg" alt="about_me">
                 <p>About me</p>
             </a>
-            <a href="#projects" class="link">
+            <a href="#projects" class="link_nav">
                 <img src="./img/Icons/suitcase-solid.svg" alt="projects">
                 <p>Projects</p>
             </a>
-            <a href="#contact_me" class="link">
+            <a href="#contact_me" class="link_nav">
                 <img src="./img/Icons/message-solid.svg" alt="contact_me">
                 <p>Contact me</p>
             </a>
@@ -45,7 +46,8 @@
             </div>
         </section>
         <section class="seccion about_me" id="about_me">
-
+            <p id="about_me_parragraf">The world of informatics and technology fascinates me.
+                I am currently about to finish my degree in Network and Telecommunications Technology. Additionally, I'm also learning about frontend development with HTML, CSS and Javascript, but that won't be all.</p>
         </section>
         <section class="seccion projects" id="projects">
             <div class="container_seccion_projects">
@@ -55,7 +57,7 @@
                     <div class="card">
                         <figure>
                             <h4>My Portfolio</h4>
-                            <img src="/img/Projects/portafolio.png" alt="portfolio_project">
+                            <img src="./img/Projects/portafolio.png" alt="portfolio_project">
                             <ul>
                                 <li>HTML</li>
                                 <li>CSS</li>
@@ -65,7 +67,7 @@
                         <div class="botones">
                             <a href="https://github.com/RobinLB99/Mi-portafolio" target="_blank">
                                 <img src="./img/Icons/github-svgrepo-com.svg" alt="Github">
-                                <p>Codigo</p>
+                                <p>Code</p>
                             </a>
                         </div>
                     </div>
@@ -82,7 +84,7 @@
                         <div class="botones">
                             <a href="https://github.com/RobinLB99/Encuesta" target="_blank">
                                 <img src="./img/Icons/github-svgrepo-com.svg" alt="Github">
-                                <p>Codigo</p>
+                                <p>Code</p>
                             </a>
                             <a href="https://robinlb99.github.io/Encuesta/" target="_blank">
                                 <img src="./img/Icons/web-svgrepo-com.svg" alt="Github">
@@ -103,7 +105,7 @@
                         <div class="botones">
                             <a href="https://github.com/RobinLB99/Tribute-Page" target="_blank">
                                 <img src="./img/Icons/github-svgrepo-com.svg" alt="Github">
-                                <p>Codigo</p>
+                                <p>Code</p>
                             </a>
                             <a href="https://robinlb99.github.io/Tribute-Page/" target="_blank">
                                 <img src="./img/Icons/web-svgrepo-com.svg" alt="Github">
@@ -124,7 +126,7 @@
                         <div class="botones">
                             <a href="https://github.com/RobinLB99/Parallax-Website" target="_blank">
                                 <img src="./img/Icons/github-svgrepo-com.svg" alt="Github">
-                                <p>Codigo</p>
+                                <p>Code</p>
                             </a>
                             <a href="https://robinlb99.github.io/Parallax-Website/" target="_blank">
                                 <img src="./img/Icons/web-svgrepo-com.svg" alt="Github">
@@ -136,7 +138,23 @@
             </div>
         </section>
         <section class="seccion contact_me" id="contact_me">
-
+            <div class="container_contact">
+                <h2 class="contact_me">Contact me by</h2>
+                <div class="line"></div>
+                <div class="links">
+                    <a class="link" href="https://ec.linkedin.com/in/robin-lugo-boero-58274320a" target="_blank">
+                        <img src="./img/Icons/linkedin-icon.svg" alt="Linkedin">
+                        <p>Linkedin</p>
+                    </a>
+                    <a class="link" href="https://twitter.com/BoeroLugo" target="_blank">
+                        <img src="./img/Icons/twitter-icon.png" alt="Twitter">
+                        <p>Twitter</p>
+                    </a>
+                    <a class="link" href="mailto:RJLB991102@hotmail.com" target="_blank">
+                        <img src="./img/Icons/mensaje2-icon.png" alt="email">
+                        <p>E-mail</p>
+                    </a>
+                </div>
         </section>
     </main>
 </body>
