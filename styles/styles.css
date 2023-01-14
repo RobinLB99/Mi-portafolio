@@ -18,6 +18,7 @@ html, body{
 
 .menu > a {
     text-decoration: none;
+    color: white;
 }
 
 .menu > a > img {
@@ -100,9 +101,14 @@ html, body{
     margin: 0 auto;
 }
 
+#projects {
+    height: max-content;
+    padding-bottom: 20px;
+}
+
 .container_seccion_projects {
-    height: 100%;
     padding-top: 15px;
+    height: 100%;
 }
 
 .projects_container {
@@ -111,13 +117,13 @@ html, body{
     align-items: center;
     padding: 10px;
     gap: 15px;
-    overflow: hidden;
-    overflow-y: scroll;
-    width: calc(100% - 30px);
-    height: calc(100% - 55px);
     margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
+    width: calc(100% - 30px);
+    height: calc(100% - 55px);
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .card {
@@ -146,6 +152,7 @@ html, body{
     height: 130px;
     margin: 10px 0;
     border-radius: 4px;
+    object-fit: cover;
 }
 
 .card ul {
@@ -182,26 +189,29 @@ html, body{
 .botones a {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 120px;
     height: 100%;
     gap: 10px;
-    background-color: #ffffff88;
-    color: black;
+    background-color: #24292eef;
+    color: rgb(255, 255, 255);
     transition-duration: 0.3s;
     padding: 5px 10px;
     border-radius: 4px;
     text-decoration: none;
     text-shadow: none;
+    border: 1px solid transparent;
 }
 
 .botones a:hover {
     transition-duration: 0.3s;
-    background-color: #edf6ff;
+    border: 1px solid white;
 }
 
 .botones > a > img {
     width: 23px;
     height: auto;
+    filter: invert();
 }
 
 .botones > a > p {
@@ -212,10 +222,15 @@ html, body{
 .contact_me {
     display: grid;
     place-items: center;
+    height: 50vh;
 }
 
 .container_contact {
     width: calc(100% - 100px);
+}
+
+.container_contact h2 {
+    height: fit-content;
 }
 
 .links {
