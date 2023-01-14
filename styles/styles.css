@@ -10,7 +10,6 @@ html, body{
     scroll-behavior: smooth;
     text-shadow: #18181a 2px 2px 2px;
 }
-
 .navbar {
     background-color: #18181a56;
     backdrop-filter: blur(15px);
@@ -91,6 +90,7 @@ html, body{
     font-size: 1.1rem;
     width: 100%;
 }
+
 
 .projects {
     padding-top: 20px;
@@ -175,6 +175,7 @@ html, body{
     margin: 15px 0;
 }
 
+
 .botones {
     display: flex;
     flex-direction: row;
@@ -205,6 +206,7 @@ html, body{
 
 .botones a:hover {
     transition-duration: 0.3s;
+
     border: 1px solid white;
 }
 
@@ -262,6 +264,7 @@ a[class="link"]:hover {
     background-color: #edf6ff4f;
     transition-duration: .3s;
 }
+
 
 a[class="link"] > img {
     width: 48px;
