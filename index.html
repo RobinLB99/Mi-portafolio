@@ -5,100 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/@media.css">
-    <title>Mi primera pagina web</title>
+    <link rel="stylesheet" href="./styles/mobile_mode.css">
+    <link rel="stylesheet" href="./styles/tablet_mode.css">
+    <link rel="stylesheet" href="./styles/desktop_mode.css">
+    <title>Robin Lugo Boero</title>
 </head>
 <body>
-    <!-- Header -->
-    <header class="nav">
-        <!--
-        <div class="buttom">
-            <div class="content">
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-            </div>
+    <nav class="navbar">
+        <div class="border"></div>
+        <div class="container-logo">
+            <img class="logo" src="./img/Logo/RObin_Lugo_B.__1_-removebg-preview.png" alt="Logo">
         </div>
-        -->
+        <div class="separador"></div>
         <div class="menu">
-            <a href="#home" id="a_home">
-                <img src="./img/Icons/house-solid.svg" alt="Home">
-                <p class="p-description">Home</p>
+            <a href="#home" class="link_nav">
+                <img src="./img/Icons/house-solid.svg" alt="home">
+                <p>Home</p>
             </a>
-            <a href="#about_me" id="a_about">
-                <img src="./img/Icons/address-card-solid.svg" alt="about me">
-                <p class="p-description">About Me</p>
+            <a href="#about_me" class="link_nav">
+                <img src="./img/Icons/address-card-solid.svg" alt="about_me">
+                <p>About me</p>
             </a>
-            <a href="#projects" id="a_projects">
+            <a href="#projects" class="link_nav">
                 <img src="./img/Icons/suitcase-solid.svg" alt="projects">
-                <p class="p-description">Mi projects</p>
-            </a>
-            <a href="#contact_me" id="a_contacts">
-                <img src="./img/Icons/message-solid.svg" alt="Contact me">
-                <p class="p-description">Contact Me</p>
-            </a>
-            <a href="#cv" id="a_curriculum">
-                <img src="./img/Icons/file-solid.svg" alt="Curriculum">
-                <p class="p-description">Curriculum</p>
-            </a>
-        </div>
-        <!--
-        <div class="configuration">
-            <img src="./img/configuration.png" alt="">
-        </div>
-        -->
-    </header>
-    <!-- Contenido -->
-    <main>
-        <div class="home" id="home">
-           <div class="content_home">
-                <div class="presentation">
-                    <h1 class="greeting">Hello, I'm Robin!</h1>
-                    <p class="invitation">If you want to know about me, keep looking.</p>
-                </div>
-                <img class="perfil_photo" src="./img/Perfil/robin_photo.jpg" alt="Photo">
-           </div>
-           <div class="nav_buttons">
-                <a href="#about_me">
-                    <img src="./img/Icons/caret-down-square-fill.svg" alt="Down">
-                </a>
-           </div>
-        </div>
-        <div class="about_me" id="about_me">
-            <div class="content_about">
-                <div class="my_information">
-                    <p>The world of informatics and technology fascinates me.<br>I am currently about to finish my degree in Network and Telecommunications Technology. Additionally, I'm also learning about frontend development with HTML, CSS and Javascript, but that won't be all.</p>
-                </div>
-            </div>
-            <div class="nav_buttons">
-                <a href="#home">
-                    <img src="./img/Icons/caret-up-square-fill.svg" alt="Up">
-                </a>
-                <a href="#projects">
-                    <img src="./img/Icons/caret-down-square-fill.svg" alt="Down">
-                </a>
-           </div>
-        </div>
 
-        <div class="sec_projects" id="projects">
-            <div class="sec_projects_container">
-                <h2 class="title_sec3">Look at my projects</h2>
-                <div class="sub"></div>
-                <div class="projects">
-                    <div class="card_project">
+                <p>Projects</p>
+            </a>
+            <a href="#contact_me" class="link_nav">
+                <img src="./img/Icons/message-solid.svg" alt="contact_me">
+                <p>Contact me</p>
+            </a>
+        </div>
+        <div class="border"></div>
+    </nav>
+    <main>
+        <section class="seccion home" id="home">
+            <div class="container_home">
+                <div class="presentation">
+                    <h2>Hello!, I'm Robin</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <img src="./img/Perfil/robin_photo.jpg" alt="photo" id="photo_perfil">
+            </div>
+        </section>
+        <section class="seccion about_me" id="about_me">
+            <fieldset id="about_me_parragraf">
+                <legend>About me</legend>
+                <p>The world of informatics and technology fascinates me.
+                    I am currently about to finish my degree in Network and Telecommunications Technology. Additionally, I'm also learning about frontend development with HTML, CSS and Javascript, but that won't be all</p>
+            </fieldset>
+        </section>
+        <section class="seccion projects" id="projects">
+            <div class="container_seccion_projects">
+                <h3>My projects</h3>
+                <div class="line"></div>
+                <div class="projects_container">
+                    <div class="card">
                         <figure>
-                            <h3>Portafolio</h3>
-                            <img class="img-project" src="./img/Projects/portafolio.png" alt="portafolio">
-                            <ul class="tecnologys">
+                            <h4>My Portfolio</h4>
+                            <img src="./img/Projects/portafolio.png" alt="portfolio_project">
+                            <ul>
                                 <li>HTML</li>
                                 <li>CSS</li>
                             </ul>
-                            <figcaption class="description">Personal portfolio that you see on the screen.</figcaption>
+                            <figcaption>Personal portfolio that you see on the screen.</figcaption>
                         </figure>
+                        <div class="botones">
+                            <a href="https://github.com/RobinLB99/Mi-portafolio" target="_blank">
+                                <img src="./img/Icons/github-svgrepo-com.svg" alt="Github">
+                                <p>Code</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="card_project">
+                    <div class="card">
                         <figure>
-                            <h3>Quiz</h3>
+                            <h4>Quiz</h4>
                             <img class="img-project" src="./img/Projects/quiz.png" alt="quiz">
                             <ul class="tecnologys">
                                 <li>HTML</li>
@@ -106,87 +87,81 @@
                             </ul>
                             <figcaption class="description">Survey developed as part of the FreeCodeCamp project.</figcaption>
                         </figure>
+                        <div class="botones">
+                            <a href="https://github.com/RobinLB99/Encuesta" target="_blank">
+                                <img src="./img/Icons/github-svgrepo-com.svg" alt="Github">
+                                <p>Code</p>
+                            </a>
+                            <a href="https://robinlb99.github.io/Encuesta/" target="_blank">
+                                <img src="./img/Icons/web-svgrepo-com.svg" alt="Github">
+                                <p>Web</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="card_project">
+                    <div class="card">
                         <figure>
-                            <h3>Tribute Page</h3>
+                            <h4>Tribute Page</h4>
                             <img class="img-project" src="./img/Projects/tribute-page.png" alt="tribute-page">
                             <ul class="tecnologys">
                                 <li>HTML</li>
                                 <li>CSS</li>
                             </ul>
-                            <figcaption class="description">Tribute page dedicated to Norman Borlaug as part of the FreeCodeCamp project.</figcaption>
+                            <figcaption class="description">Tribute page dedicated to Norman Borlaug.</figcaption>
                         </figure>
+                        <div class="botones">
+                            <a href="https://github.com/RobinLB99/Tribute-Page" target="_blank">
+                                <img src="./img/Icons/github-svgrepo-com.svg" alt="Github">
+                                <p>Code</p>
+                            </a>
+                            <a href="https://robinlb99.github.io/Tribute-Page/" target="_blank">
+                                <img src="./img/Icons/web-svgrepo-com.svg" alt="Github">
+                                <p>Web</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="card_project">
+                    <div class="card">
                         <figure>
-                            <h3>Parallax Website</h3>
+                            <h4>Parallax Website</h4>
                             <img class="img-project" src="./img/Projects/parallax-website.png" alt="parallax-website">
                             <ul class="tecnologys">
                                 <li>HTML</li>
                                 <li>CSS</li>
                             </ul>
-                            <figcaption class="description">Personal project developed as an initiative to put into practice the concepts learned.</figcaption>
+                            <figcaption class="description">An initiative to put into practice the concepts learned.</figcaption>
                         </figure>
+                        <div class="botones">
+                            <a href="https://github.com/RobinLB99/Parallax-Website" target="_blank">
+                                <img src="./img/Icons/github-svgrepo-com.svg" alt="Github">
+                                <p>Code</p>
+                            </a>
+                            <a href="https://robinlb99.github.io/Parallax-Website/" target="_blank">
+                                <img src="./img/Icons/web-svgrepo-com.svg" alt="Github">
+                                <p>Web</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="nav_buttons">
-                    <a href="#about_me">
-                        <img src="./img/Icons/caret-up-square-fill.svg" alt="Up">
-                    </a>
-                    <a href="#contact_me">
-                        <img src="./img/Icons/caret-down-square-fill.svg" alt="Down">
-                    </a>
-               </div>
             </div>
-        </div>
-        <div class="contact" id="contact_me">
+        </section>
+        <section class="seccion contact_me" id="contact_me">
             <div class="container_contact">
                 <h2 class="contact_me">Contact me by</h2>
-                <div class="sub"></div>
+                <div class="line"></div>
                 <div class="links">
-                    <a class="link" href="https://twitter.com/BoeroLugo" target="_blank">
-                        <div class="content_elements">
-                            <img src="./img/Icons/twitter-svgrepo-com.svg" alt="Twitter" class="icons_contact">
-                            <p class="des_icon">Twitter</p>
-                        </div>
+                    <a class="link" href="https://ec.linkedin.com/in/robin-lugo-boero-58274320a" target="_blank">
+                        <img src="./img/Icons/linkedin-icon.svg" alt="Linkedin">
+                        <p>Linkedin</p>
                     </a>
-                    <a class="link" href="https://www.instagram.com/lrobinb99/" target="_blank">
-                        <div class="content_elements">
-                            <img src="./img/Icons/instagram-2-1-logo-svgrepo-com.svg" alt="Instagram" class="icons_contact">
-                            <p class="des_icon">Instagram</p>
-                        </div>
+                    <a class="link" href="https://twitter.com/BoeroLugo" target="_blank">
+                        <img src="./img/Icons/twitter-icon.png" alt="Twitter">
+                        <p>Twitter</p>
                     </a>
                     <a class="link" href="mailto:RJLB991102@hotmail.com" target="_blank">
-                        <div class="content_elements">
-                            <img src="./img/Icons/email-svgrepo-com.svg" alt="email"class="icons_contact">
-                            <p class="des_icon">E-mail</p>
-                        </div>
+                        <img src="./img/Icons/mensaje2-icon.png" alt="email">
+                        <p>E-mail</p>
                     </a>
                 </div>
-                <div class="nav_buttons">
-                    <a href="#projects">
-                        <img src="./img/Icons/caret-up-square-fill.svg" alt="Up">
-                    </a>
-                    <a href="#cv">
-                        <img src="./img/Icons/caret-down-square-fill.svg" alt="Down">
-                    </a>
-               </div>
-            </div>
-        </div>
-        <div class="sec_curriculum" id="cv">
-            <div class="container_cv">
-                <a class="cv" href="./curriculum.html" target="_blank">
-                    <p>Ver curriculum</p>
-                </a>
-                <div class="nav_buttons">
-                    <a href="#contact_me">
-                        <img src="./img/Icons/caret-up-square-fill.svg" alt="Up">
-                    </a>
-               </div>
-            </div>
-        </div>
-        <!---->
+        </section>
     </main>
 </body>
 </html>
