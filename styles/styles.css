@@ -91,6 +91,15 @@ html, body{
     width: 100%;
 }
 
+.projects {
+    padding-top: 20px;
+}
+
+.projects h3 {
+    width: fit-content;
+    margin: 0 auto;
+}
+
 .container_seccion_projects {
     height: 100%;
     padding-top: 15px;
@@ -247,4 +256,3 @@ a[class="link"] > img {
 a[class="link"] > p {
     height: fit-content;
 }
-
