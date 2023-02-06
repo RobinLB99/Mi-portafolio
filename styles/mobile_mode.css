@@ -74,6 +74,10 @@
         height: 100vh;
     }
 
+    .projects_container {
+        overflow-y: scroll;
+    }
+
     .card {
         background-color: #81818165;
     }

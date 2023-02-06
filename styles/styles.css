@@ -122,8 +122,6 @@ html, body{
     flex-wrap: wrap;
     width: calc(100% - 30px);
     height: calc(100% - 55px);
-    overflow: hidden;
-    overflow-y: scroll;
 }
 
 .card {
