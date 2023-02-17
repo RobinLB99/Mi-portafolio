@@ -1,0 +1,96 @@
+@media (max-width:480px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .menu > a > img {
+        display: block;
+        width: auto;
+        height: 55%;
+    }
+
+    .menu > a > p {
+        display: none;
+    }
+
+    .border, .separador {
+        display: none;
+    }
+
+    .container-logo {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: fit-content;
+    }
+
+    .menu > a {
+        height: 100%;
+        padding: 0 15px;
+    }
+
+    .seccion {
+        padding-bottom: 50px;
+    }
+
+    .container_home {
+        text-align: center;
+        text-shadow: #24292e 2px 2px 5px;
+    }
+
+    .presentation {
+        padding: 0 10px;
+    }
+
+    #projects {
+        height: 100vh;
+    }
+
+    .contact_me {
+        height: 100vh;
+    }
+
+    .projects_container {
+        overflow-y: scroll;
+    }
+
+    .card {
+        background-color: #81818165;
+    }
+
+    .card:hover {
+        backdrop-filter: none;
+    }
+
+    a[class="link"]:hover {
+        background-color: unset;
+    }
+
+    .contact_me {
+        height: 100vh;
+    }
+}
