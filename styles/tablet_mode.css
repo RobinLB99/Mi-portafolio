@@ -12,6 +12,9 @@
     .menu > a > p {
         display: none;
     }
+    .container_home {
+        text-align: center;
+    }
 
     .border, .separador {
         display: none;
