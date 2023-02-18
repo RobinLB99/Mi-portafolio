@@ -20,8 +20,8 @@ html, body{
     color: white;
 }
 
-.menu > a > img {
-    filter: invert();
+.link_nav .fx3 {
+    display: none;
 }
 
 .seccion {
