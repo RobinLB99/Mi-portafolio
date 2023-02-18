@@ -9,9 +9,32 @@
         justify-content: center;
     }
 
-    .menu > a > p {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100% ;
+        gap: 20px;
+    }
+
+    .link_nav {
+        display: grid;
+        place-content: center;
+        width: 100%;
+        height: 50px;
+    }
+
+    .link_nav .fx3 {
+        display: grid;
+        place-content: center;
+        font-size: 1.7rem;
+    }
+
+    .link_nav p[class="text"] {
         display: none;
     }
+
     .container_home {
         text-align: center;
     }
@@ -22,14 +45,6 @@
 
     .container-logo {
         display: none;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        padding: 10px;
-        height: fit-content;
     }
 
     .seccion {

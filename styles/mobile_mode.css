@@ -1,7 +1,4 @@
 @media (max-width:480px) {
-    body {
-        overflow-y: hidden;
-    }
 
     .navbar {
         width: 100%;
@@ -20,13 +17,13 @@
         height: 100%;
     }
 
-    .menu > a > img {
-        display: block;
-        width: auto;
-        height: 55%;
+    .link_nav .fx3 {
+        display: grid;
+        place-content: center;
+        font-size: 1.7rem;
     }
 
-    .menu > a > p {
+    .link_nav .text {
         display: none;
     }
 
@@ -66,16 +63,8 @@
         padding: 0 10px;
     }
 
-    #projects {
-        height: 100vh;
-    }
-
     .contact_me {
         height: 100vh;
-    }
-
-    .projects_container {
-        overflow-y: scroll;
     }
 
     .card {
@@ -86,11 +75,11 @@
         backdrop-filter: none;
     }
 
-    a[class="link"]:hover {
-        background-color: unset;
-    }
-
     .contact_me {
         height: 100vh;
+    }
+
+    footer {
+        margin-bottom: 50px;
     }
 }
