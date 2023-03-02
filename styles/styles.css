@@ -13,6 +13,7 @@ html, body{
 .navbar {
     background-color: #18181a56;
     backdrop-filter: blur(15px);
+    z-index: 10;
 }
 
 .menu > a {
@@ -129,6 +130,7 @@ html, body{
     height: 350px;
     padding: 20px;
     background-color: #f4f4f423;
+    backdrop-filter: blur(10px);
     transition-duration: 0.3s;
     border: 2px solid transparent;
     border-radius: 4px;
@@ -137,6 +139,7 @@ html, body{
 
 .card:hover {
     background-color: #f4f4f446;
+    backdrop-filter: blur(20px);
     transition-duration: 0.3s;
     border: 2px solid white;
 }
