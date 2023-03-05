@@ -56,3 +56,16 @@
         height: 100vh;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .container_home {
+        grid-template-columns: none;
+        grid-template-rows: 1fr .5fr;
+    }
+
+    .presentation {
+        grid-row: 2/3;
+
+        text-align: center;
+    }
+}
