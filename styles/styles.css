@@ -72,12 +72,13 @@ html, body{
 
 .presentation {
     text-align: right;
+    font-size: 1.2rem;
 
     display: grid;
     grid-template-rows: repeat(4, 1fr);
 }
 
-.presentation h2 {
+.presentation h1 {
     grid-row: 2/3;
 
     display: grid;
@@ -133,7 +134,7 @@ html, body{
     padding-top: 20px;
 }
 
-.projects h3 {
+.projects h1 {
     width: fit-content;
     margin: 0 auto;
 }
@@ -161,92 +162,144 @@ html, body{
     height: calc(100% - 55px);
 }
 
+/*Nuevo codigo*/
+
 .card {
     width: 300px;
     height: 350px;
-    padding: 20px;
-    background-color: #f4f4f423;
-    transition-duration: 0.3s;
-    border: 2px solid transparent;
-    border-radius: 4px;
+    background-color: rgba(36, 41, 46, 0.7);
+    backdrop-filter: blur(5px);
+    color: white;
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
+
     overflow: hidden;
+    cursor: pointer;
+
+    transition-duration: .5s;
 }
 
 .card:hover {
-    background-color: #f4f4f446;
-    transition-duration: 0.3s;
-    border: 2px solid white;
+    background-color: rgb(36, 41, 46, 1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+    transition-duration: .5s;
 }
 
-.card h4 {
-    text-shadow: none;
+input[type="checkbox"] {
+    display: none;
 }
 
-.card img {
-    width: 100%;
-    height: 130px;
-    margin: 10px 0;
-    border-radius: 4px;
-    object-fit: cover;
-}
+.buttons {
+    grid-column: -1/1;
+    grid-row: -1/1;
 
-.card ul {
+    background-color: rgb(36, 41, 46, 1);
+
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding: 0;
-    text-shadow: none;
-}
+    flex-direction: column;
 
-.card ul li {
-    list-style-type: none;
-    background-color: #24292eb9;
-    padding: 5px 10px;
-    border-radius: 4px;
-}
-
-.card figcaption {
-    padding: 0;
-    margin: 15px 0;
-}
-
-
-.botones {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 40px;
+
     gap: 10px;
-    height: 40px;
-    border-radius: 4px;
+
+    align-items: center;
+
+    clip-path: circle(0 at top left);
+    transition: clip-path .4s;
 }
 
-.botones a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 100%;
-    gap: 10px;
-    background-color: #24292eef;
-    color: rgb(255, 255, 255);
-    transition-duration: 0.3s;
-    padding: 5px 10px;
+input[type="checkbox"]:checked + label .buttons {
+    clip-path: circle(150% at top left);
+}
+
+
+.buttons a {
+    width: 150px;
+    height: 40px;
+    padding: 5px;
     border-radius: 4px;
+
+    font-size: 1.3rem;
     text-decoration: none;
-    text-shadow: none;
-    border: 1px solid transparent;
+    color: #ffffffcb;
+    background-color: rgb(26, 28, 29);
+
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    gap: 5px;
+    place-items: center;
+
+    transition-duration: .4s;
+
+    cursor: pointer;
 }
 
-.botones a:hover {
-    transition-duration: 0.3s;
-    border: 1px solid white;
+.buttons a:hover {
+    background-color: rgb(53, 59, 66);
+    transition-duration: .4s;
 }
 
-.botones > a > p {
-    width: fit-content;
+.buttons p {
+    width: 100%;
 }
+
+.card.empty {
+    width: 300px;
+    height: 0px;
+    opacity: 0;
+}
+
+.preview_project {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    grid-column: -1/1;
+    grid-row: 1/2;
+}
+
+.project_description {
+    width: 100%;
+    padding: 10px;
+
+    grid-column: -1/1;
+    grid-row: 2/3;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    overflow: hidden;
+}
+
+.tecnologies {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 10px;
+}
+
+.tecnologies li {
+    background-color: rgba(24, 24, 24, 0.708);
+    color: aliceblue;
+
+    padding: 5px 10px;
+
+    text-align: center;
+}
+
+/*------------*/
 
 /*Contact me Section*/
 .contact_me {
@@ -259,7 +312,7 @@ html, body{
     width: calc(100% - 100px);
 }
 
-.container_contact h2 {
+.container_contact h1 {
     height: fit-content;
 }
 

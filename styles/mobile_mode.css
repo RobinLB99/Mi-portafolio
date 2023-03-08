@@ -67,14 +67,6 @@
         height: 100vh;
     }
 
-    .card {
-        background-color: #81818165;
-    }
-
-    .card:hover {
-        backdrop-filter: none;
-    }
-
     .contact_me {
         height: 100vh;
     }

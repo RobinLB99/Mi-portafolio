@@ -14,6 +14,17 @@
     <link rel="stylesheet" href="./styles/desktop_mode.css">
     <link rel="shortcut icon" type="image/png" href="./img/Logo/RL.png"/>
     <title>Robin Lugo Boero</title>
+    <script>
+        const checkboxes = document.getElementsByName("option");
+
+        function deselectAllCheckboxesExcept(clickedCheckbox) {
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i] !== clickedCheckbox) {
+                    checkboxes[i].checked = false;
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -25,19 +36,19 @@
         <div class="menu">
             <a href="#home" class="link_nav">
                 <p class="fx3"><i class="fas  fa-home"></i></p>
-                <p class="text">Home</p>
+                <p class="text">Inicio</p>
             </a>
             <a href="#about_me" class="link_nav">
                 <p class="fx3"><i class="fas fa-info-circle"></i></p>
-                <p class="text">About me</p>
+                <p class="text">Sobre mi</p>
             </a>
             <a href="#projects" class="link_nav">
                 <p class="fx3"><i class="fas fa-briefcase"></i></p>
-                <p class="text">Projects</p>
+                <p class="text">Proyectos</p>
             </a>
             <a href="#contact_me" class="link_nav">
                 <p class="fx3"><i class="fas fa-comments"></i></p>
-                <p class="text">Contact me</p>
+                <p class="text">Contactame</p>
             </a>
         </div>
         <div class="border"></div>
@@ -46,8 +57,8 @@
         <section class="seccion home" id="home">
             <div class="container_home">
                 <div class="presentation">
-                    <h2>Hello!, I'm Robin</h2>
-                    <p>I am a web developer in training. If you wish, look and get to know me!</p>
+                    <h1>¡Hola!, soy Robin</h1>
+                    <p>Soy desarrollador web en formación. Si lo deseas, quedate y mira.</p>
                 </div>
                 <div class="perfil">
                     <img src="./img/Perfil/robin_photo2.png" alt="photo" id="photo_perfil">
@@ -57,155 +68,180 @@
         </section>
         <section class="seccion about_me" id="about_me">
             <fieldset id="about_me_parragraf">
-                <legend>About me</legend>
-                <p>I am a passionate web developer in training with experience in basic programming with Javascript and Responsive Web Design. I am excited to learn and expand your technical skills and knowledge in the field of web development.</p>
+                <legend>Sobre mi</legend>
+                <p>Soy un apasionado desarrollador web en formación con experiencia en programación básica con Javascript y Responsive Web Design. Estoy emocionado de aprender y ampliar sus habilidades técnicas y conocimientos en el campo del desarrollo web.</p>
             </fieldset>
         </section>
         <section class="seccion projects" id="projects">
             <div class="container_seccion_projects">
-                <h3>My projects</h3>
+                <h1>Mis proyectos</h1>
                 <div class="line"></div>
                 <div class="projects_container">
-                    <div class="card">
-                        <figure>
-                            <h4>My Portfolio</h4>
-                            <img src="./img/Projects/portafolio.png" alt="portfolio_project">
-                            <ul>
+                    <input type="checkbox" name="option" id="checkbox1" onclick="deselectAllCheckboxesExcept(this)">
+                    <label for="checkbox1" class="card">
+                        <img src="./img/Projects/calculadora.png" alt="preview_project" class="preview_project">
+                        <figcaption class="project_description">
+                            <h3 class="name-project">Calculadora</h3 >
+                            <ul class="tecnologies">
                                 <li>HTML</li>
                                 <li>CSS</li>
+                                <li>Javascript</li>
                             </ul>
-                            <figcaption>Personal portfolio that you see on the screen.</figcaption>
-                        </figure>
-                        <div class="botones">
-                            <a href="https://github.com/RobinLB99/Mi-portafolio" target="_blank">
-                                <i class="fab fa-github"></i>
-                                <p>Code</p>
+                            <p class="descrip_project">Calculador de operaciones matematicas escenciales.</p>
+                        </figcaption>
+                        <div class="buttons">
+                            <a href="https://github.com/RobinLB99/Calculadora" target="_blank"><i class="fa-brands fa-github"></i><p>Codigo</p></a>
+                            <a href="https://robinlb99.github.io/Calculadora/" target="_blank">
+                                <i class="fa-solid fa-globe"></i>
+                                <p>Web</p>
                             </a>
                         </div>
-                    </div>
-                    <div class="card">
-                        <figure>
-                            <h4>Landing Page</h4>
-                            <img class="img-project" src="./img/Projects/landing-page.png" alt="landing-page">
-                            <ul class="tecnologys">
+                    </label>
+                    <input type="checkbox" name="option" id="checkbox2" onclick="deselectAllCheckboxesExcept(this)">
+                    <label for="checkbox2" class="card">
+                        <img src="./img/Projects/Inventario-biblioteca.png" alt="preview_project" class="preview_project">
+                        <figcaption class="project_description">
+                            <h3 class="name-project">Inventario de biblioteca</h3 >
+                            <ul class="tecnologies">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                            <p class="descrip_project">Software de gestion de inventario de biblioteca</p>
+                        </figcaption>
+                        <div class="buttons">
+                            <a href="https://github.com/RobinLB99/Biblioteca-Inventario" target="_blank"><i class="fa-brands fa-github"></i><p>Codigo</p></a>
+                            <a href="https://robinlb99.github.io/Biblioteca-Inventario/" target="_blank">
+                                <i class="fa-solid fa-globe"></i>
+                                <p>Web</p>
+                            </a>
+                        </div>
+                    </label>
+                    <input type="checkbox" name="option" id="checkbox3" onclick="deselectAllCheckboxesExcept(this)">
+                    <label for="checkbox3" class="card">
+                        <img src="./img/Projects/portafolio.png" alt="preview_project" class="preview_project">
+                        <figcaption class="project_description">
+                            <h3 class="name-project">Mi portafolio</h3 >
+                            <ul class="tecnologies">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                            <p class="descrip_project">Portafolio personal en el cual estan.</p>
+                        </figcaption>
+                        <div class="buttons">
+                            <a href="https://github.com/RobinLB99/Mi-portafolio" target="_blank"><i class="fa-brands fa-github"></i><p>Codigo</p></a>
+                        </div>
+                    </label>
+                    <input type="checkbox" name="option" id="checkbox4" onclick="deselectAllCheckboxesExcept(this)">
+                    <label for="checkbox4" class="card">
+                        <img src="./img/Projects/landing-page.png" alt="preview_project" class="preview_project">
+                        <figcaption class="project_description">
+                            <h3 class="name-project">Landing Page</h3 >
+                            <ul class="tecnologies">
                                 <li>HTML</li>
                                 <li>CSS</li>
                             </ul>
-                            <figcaption class="description"> Product landing page - freeCodeCamp</figcaption>
-                        </figure>
-                        <div class="botones">
+                            <p class="descrip_project">Landing Page del producto - freeCodeCamp</p>
+                        </figcaption>
+                        <div class="buttons">
                             <a href="https://github.com/RobinLB99/Landing-Page" target="_blank">
-                                <i class="fab fa-github"></i>
+                                <i class="fa-brands fa-github"></i>
                                 <p>Code</p>
                             </a>
                             <a href="https://robinlb99.github.io/Landing-Page/" target="_blank">
-                                <i class="fas fa-globe"></i>
+                                <i class="fa-solid fa-globe"></i>
                                 <p>Web</p>
                             </a>
                         </div>
-                    </div>
-                    <div class="card">
-                        <figure>
-                            <h4>Documentation Page</h4>
-                            <img class="img-project" src="./img/Projects/documentation-page.png" alt="documentation-page">
-                            <ul class="tecnologys">
+                    </label>
+                    <input type="checkbox" name="option" id="checkbox5" onclick="deselectAllCheckboxesExcept(this)">
+                    <label for="checkbox5" class="card">
+                        <img src="./img/Projects/documentation-page.png" class="preview_project">
+                        <figcaption class="project_description">
+                            <h3 class="name-project">Pagina de documentacion tecnica</h3 >
+                            <ul class="tecnologies">
                                 <li>HTML</li>
                                 <li>CSS</li>
                             </ul>
-                            <figcaption class="description">Basic model of technical documentation page.</figcaption>
-                        </figure>
-                        <div class="botones">
+                            <p class="descrip_project">Modelo básico de página de documentación técnica.</p>
+                        </figcaption>
+                        <div class="buttons">
                             <a href="https://github.com/RobinLB99/Paguina-de-documentacion-tecnica" target="_blank">
-                                <i class="fab fa-github"></i>
+                                <i class="fa-brands fa-github"></i>
                                 <p>Code</p>
                             </a>
                             <a href="https://robinlb99.github.io/Paguina-de-documentacion-tecnica/" target="_blank">
-                                <i class="fas fa-globe"></i>
+                                <i class="fa-solid fa-globe"></i>
                                 <p>Web</p>
                             </a>
                         </div>
-                    </div>
-                    <div class="card">
-                        <figure>
-                            <h4>Quiz</h4>
-                            <img class="img-project" src="./img/Projects/quiz.png" alt="quiz">
-                            <ul class="tecnologys">
+                    </label>
+                    <input type="checkbox" name="option" id="checkbox6" onclick="deselectAllCheckboxesExcept(this)">
+                    <label for="checkbox6" class="card">
+                        <img src="./img/Projects/quiz.png" class="preview_project">
+                        <figcaption class="project_description">
+                            <h3 class="name-project">Encuesta</h3 >
+                            <ul class="tecnologies">
                                 <li>HTML</li>
                                 <li>CSS</li>
                             </ul>
-                            <figcaption class="description">Survey developed as part of the FreeCodeCamp project.</figcaption>
-                        </figure>
-                        <div class="botones">
+                            <p class="descrip_project">Encuesta desarrollada como parte del proyecto FreeCodeCamp.</p>
+                        </figcaption>
+                        <div class="buttons">
                             <a href="https://github.com/RobinLB99/Encuesta" target="_blank">
-                                <i class="fab fa-github"></i>
+                                <i class="fa-brands fa-github"></i>
                                 <p>Code</p>
                             </a>
                             <a href="https://robinlb99.github.io/Encuesta/" target="_blank">
-                                <i class="fas fa-globe"></i>
+                                <i class="fa-solid fa-globe"></i>
                                 <p>Web</p>
                             </a>
                         </div>
-                    </div>
-                    <div class="card">
-                        <figure>
-                            <h4>Tribute Page</h4>
-                            <img class="img-project" src="./img/Projects/tribute-page.png" alt="tribute-page">
-                            <ul class="tecnologys">
+                    </label>
+                    <input type="checkbox" name="option" id="checkbox7" onclick="deselectAllCheckboxesExcept(this)">
+                    <label for="checkbox7" class="card">
+                        <img src="./img/Projects/tribute-page.png" class="preview_project">
+                        <figcaption class="project_description">
+                            <h3 class="name-project">Tribute Page</h3 >
+                            <ul class="tecnologies">
                                 <li>HTML</li>
                                 <li>CSS</li>
                             </ul>
-                            <figcaption class="description">Tribute page dedicated to Norman Borlaug.</figcaption>
-                        </figure>
-                        <div class="botones">
+                            <p class="descrip_project">Tribute page dedicated to Norman Borlaug.</p>
+                        </figcaption>
+                        <div class="buttons">
                             <a href="https://github.com/RobinLB99/Tribute-Page" target="_blank">
-                                <i class="fab fa-github"></i>
+                                <i class="fa-brands fa-github"></i>
                                 <p>Code</p>
                             </a>
                             <a href="https://robinlb99.github.io/Tribute-Page/" target="_blank">
-                                <i class="fas fa-globe"></i>
+                                <i class="fa-solid fa-globe"></i>
                                 <p>Web</p>
                             </a>
                         </div>
-                    </div>
-                    <div class="card">
-                        <figure>
-                            <h4>Parallax Website</h4>
-                            <img class="img-project" src="./img/Projects/parallax-website.png" alt="parallax-website">
-                            <ul class="tecnologys">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                            </ul>
-                            <figcaption class="description">An initiative to put into practice the concepts learned.</figcaption>
-                        </figure>
-                        <div class="botones">
-                            <a href="https://github.com/RobinLB99/Parallax-Website" target="_blank">
-                                <i class="fab fa-github"></i>
-                                <p>Code</p>
-                            </a>
-                            <a href="https://robinlb99.github.io/Parallax-Website/" target="_blank">
-                                <i class="fas fa-globe"></i>
-                                <p>Web</p>
-                            </a>
-                        </div>
-                    </div>
+                    </label>
+                    <div class="card empty"></div>
+                    <div class="card empty"></div>
+                    <div class="card empty"></div>
                 </div>
             </div>
         </section>
         <section class="seccion contact_me" id="contact_me">
             <div class="container_contact">
-                <h2 class="contact_me">Contact me by</h2>
+                <h1 class="contact_me">Contact me by</h1>
                 <div class="line"></div>
                 <div class="links">
                     <a class="link" href="https://ec.linkedin.com/in/robin-joel-lugo-boero-58274320a" target="_blank">
-                        <i class="fab fa-linkedin"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
                         <p>Linkedin</p>
                     </a>
                     <a class="link" href="https://twitter.com/BoeroLugo" target="_blank">
-                        <i class="fab fa-twitter"></i>
+                        <i class="fa-brands fa-twitter"></i>
                         <p>Twitter</p>
                     </a>
                     <a class="link" href="mailto:RJLB991102@hotmail.com" target="_blank">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fa-solid fa-envelope"></i>
                         <p>E-mail</p>
                     </a>
                 </div>
