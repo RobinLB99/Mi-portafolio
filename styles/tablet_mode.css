@@ -23,6 +23,15 @@
         place-content: center;
         width: 100%;
         height: 50px;
+
+        border-radius: 4px;
+
+        transition-duration: .2s;
+    }
+
+    .link_nav:hover {
+        background-color: #ffffff53;
+        transition-duration: .2s;
     }
 
     .link_nav .fx3 {
@@ -33,10 +42,6 @@
 
     .link_nav p[class="text"] {
         display: none;
-    }
-
-    .container_home {
-        text-align: center;
     }
 
     .border, .separador {
@@ -57,15 +62,12 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
-    .container_home {
-        grid-template-columns: none;
-        grid-template-rows: 1fr .5fr;
+@media only screen and (max-width: 960px) {
+    .presentation {
+        text-align: center;
     }
 
-    .presentation {
-        grid-row: 2/3;
-
-        text-align: center;
+    .presentation a {
+        justify-content: center;
     }
 }
