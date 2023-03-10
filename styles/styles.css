@@ -40,7 +40,7 @@ html, body{
     color: var(--text-color-darkMode);
     scroll-behavior: smooth;
     text-shadow: var(--background-color-darkMode) 2px 2px 2px;
-    color: var(--text-color-darkMode)
+    color: var(--text-color-darkMode);
 }
 
 h1 {
@@ -65,13 +65,36 @@ p {
     z-index: 10;
 }
 
-.menu > a {
+.link_nav {
     text-decoration: none;
     color: var(--text-color-darkMode);
 }
 
-.link_nav .fx3 {
+.fx3 {
     display: none;
+}
+
+#interruptor {
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem;
+}
+
+#auto {
+    animation: rotar 1s;
+}
+
+#sol {
+    display: none;
+    animation: rotar 1s;
+}
+
+#luna {
+    display: none;
+    animation: rotar 1s;
 }
 
 .seccion {
@@ -405,4 +428,15 @@ footer {
     display: grid;
     place-content: center;
     border-top: 2px solid var(--text-color-darkMode);
+}
+
+@keyframes rotar {
+    0%{
+        transform: rotate(-45deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
 }
