@@ -1,6 +1,7 @@
 :root {
     /*Dark Mode*/
-    --text-color-darkMode: rgb(237, 246, 255);
+    
+    /* --text-color-darkMode: rgb(237, 246, 255);
     --background-color-darkMode: rgb(24, 24, 26);
     --navbar-darkMode: #18181a56;
     --background_dark: linear-gradient(
@@ -9,24 +10,27 @@
         rgba(29, 28, 28, 0.158)
     ), url("../img/backgrounds/artur-shamsutdinov-unsplash.jpg"), no-repeat, center;
     --card-color-darkMode: rgba(36, 41, 46, 0.6);
-    --backgroundCard-color-darkMode: rgb(36, 41, 46);
-    --borderCard-color-darkMode: rgb(67, 74, 83);
-    --tecnologiesBackground-color-darkMode: rgba(24, 24, 24, 0.7);
+    --backgroundCard-color-darkMode: rgba(32, 32, 32);
+    --borderCard-color-darkMode: rgb(93, 93, 93);
+    --tecnologiesBackground-color-darkMode: rgba(62, 62, 62, 0.745); */
+   
 
-    /*
-    --text-color-lightMode: rgb(24, 24, 26);
-    --background-color-lightMode: rgb(24, 24, 26);
-    --navbar-lightMode: #18181a56;
-    --background-light: linear-gradient(
+    /*Light  Mode*/
+    
+    --text-color-darkMode: rgb(18, 9, 0);
+    --background-color-darkMode: rgb(231, 231, 229);
+    --navbar-darkMode: #e7e7e5a9;
+    --background_dark: linear-gradient(
         130deg,
-        rgba(17, 17, 17, 0.37),
-        rgba(29, 28, 28, 0.158)
-    ), url("../img/backgrounds/altumcode-unsplash.jpg"), no-repeat, center;
-    --card-color-lightMode: rgba(36, 41, 46, 0.6);
-    --backgroundCard-color-lightMode: rgb(36, 41, 46);
-    --borderCard-color-darkMode: rgb(67, 74, 83);
-    --tecnologiesBackground-color-lightMode: rgba(24, 24, 24, 0.7);
-    */
+        rgba(238, 238, 238, 0.441),
+        rgba(226, 227, 227, 0.599)
+    ), url("../img/backgrounds/christopher-gower-unsplash.jpg"), no-repeat,
+    center;
+    --card-color-darkMode: rgba(219, 214, 209, 0.4);
+    --backgroundCard-color-darkMode: rgba(223, 223, 223);
+    --borderCard-color-darkMode: rgb(255, 255, 255);
+    --tecnologiesBackground-color-darkMode: rgba(232, 232, 232, 0.947);
+    
 }
 
 * {
@@ -40,7 +44,6 @@ html, body{
     background-color: var(--background-color-darkMode);
     color: var(--text-color-darkMode);
     scroll-behavior: smooth;
-    text-shadow: var(--background-color-darkMode) 2px 2px 2px;
     color: var(--text-color-darkMode)
 }
 
@@ -130,6 +133,7 @@ p {
 
 .presentation * {
     width: fit-content;
+    text-shadow: var(--background-color-darkMode) 2px 2px 2px;
 }
 
 .presentation a {
@@ -209,6 +213,7 @@ p {
     flex-wrap: wrap;
     width: calc(100% - 30px);
     height: calc(100% - 55px);
+    text-shadow: unset;
 }
 
 /*Nuevo codigo*/
@@ -228,7 +233,6 @@ p {
     grid-template-columns: 1fr;
 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
 
     overflow: hidden;
     cursor: pointer;
@@ -239,7 +243,7 @@ p {
 .card:hover {
     background-color: var(--backgroundCard-color-darkMode);
     border: 3px solid var(--borderCard-color-darkMode);
-    box-shadow: 10px 10px 10px rgba(18, 18, 18, 0.8);
+    box-shadow: 10px 10px 10px rgba(28, 28, 28, 0.578);
     transition-duration: .2s;
 }
 
