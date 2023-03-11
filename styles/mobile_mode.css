@@ -31,6 +31,11 @@
         display: none;
     }
 
+    .presentation {
+        text-align: center;
+        align-items: center;
+    }
+
     .container-logo {
         display: none;
     }
@@ -55,7 +60,6 @@
     }
 
     .container_home {
-        text-align: center;
         text-shadow: #24292e 2px 2px 5px;
     }
 
