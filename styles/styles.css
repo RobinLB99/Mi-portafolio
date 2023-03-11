@@ -1,3 +1,34 @@
+:root {
+    /*Dark Mode*/
+    --text-color-darkMode: rgb(237, 246, 255);
+    --background-color-darkMode: rgb(24, 24, 26);
+    --navbar-darkMode: #18181a56;
+    --background_dark: linear-gradient(
+        130deg,
+        rgba(17, 17, 17, 0.37),
+        rgba(29, 28, 28, 0.158)
+    ), url("../img/backgrounds/artur-shamsutdinov-unsplash.jpg"), no-repeat, center;
+    --card-color-darkMode: rgba(36, 41, 46, 0.6);
+    --backgroundCard-color-darkMode: rgb(36, 41, 46);
+    --borderCard-color-darkMode: rgb(67, 74, 83);
+    --tecnologiesBackground-color-darkMode: rgba(24, 24, 24, 0.7);
+
+    /*
+    --text-color-lightMode: rgb(24, 24, 26);
+    --background-color-lightMode: rgb(24, 24, 26);
+    --navbar-lightMode: #18181a56;
+    --background-light: linear-gradient(
+        130deg,
+        rgba(17, 17, 17, 0.37),
+        rgba(29, 28, 28, 0.158)
+    ), url("../img/backgrounds/altumcode-unsplash.jpg"), no-repeat, center;
+    --card-color-lightMode: rgba(36, 41, 46, 0.6);
+    --backgroundCard-color-lightMode: rgb(36, 41, 46);
+    --borderCard-color-darkMode: rgb(67, 74, 83);
+    --tecnologiesBackground-color-lightMode: rgba(24, 24, 24, 0.7);
+    */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,20 +37,38 @@
 
 html, body{
     font-family: Lato, Arial, Helvetica, sans-serif;
-    background-color: #18181a;
-    color: #f4f4f4;
+    background-color: var(--background-color-darkMode);
+    color: var(--text-color-darkMode);
     scroll-behavior: smooth;
-    text-shadow: #18181a 2px 2px 2px;
+    text-shadow: var(--background-color-darkMode) 2px 2px 2px;
+    color: var(--text-color-darkMode)
 }
+
+h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem)
+}
+
+h3 {
+    font-size: clamp(1rem, 2vw, 1.3rem)
+}
+
+p {
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
+}
+
 .navbar {
-    background-color: #18181a56;
+    background-color: var(--navbar-darkMode);
     backdrop-filter: blur(15px);
     z-index: 10;
 }
 
 .menu > a {
     text-decoration: none;
-    color: white;
+    color: var(--text-color-darkMode);
 }
 
 .link_nav .fx3 {
@@ -37,11 +86,7 @@ html, body{
 }
 
 .home, .projects {
-    background: linear-gradient(
-        130deg,
-        rgba(17, 17, 17, 0.37),
-        rgba(29, 28, 28, 0.158)
-    ), url("../img/backgrounds/image2.jpg"), no-repeat, center;
+    background: var(--background_dark);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -75,48 +120,39 @@ html, body{
 
 .presentation {
     text-align: right;
-    font-size: 1.2rem;
 
     display: flex;
     flex-direction: column;
 
     justify-content: center;
+    align-items: flex-end;
 }
 
-.presentation h1 {
-    font-size: 2rem;
+.presentation * {
+    width: fit-content;
 }
 
 .presentation a {
-    color: #edf6ff;
+    color: var(--text-color-darkMode);
     text-decoration: none;
-    font-size: 1rem;
 
     display: flex;
     flex-direction: row;
     gap: 5px;
 
     align-items: center;
-    justify-content: flex-end;
 }
 
 .presentation a:hover {
-    color: #49c5ff;
+    color: #bc1e20;
 }
 
 #photo_perfil {
     height: 250px;
     width: auto;
 
-    border-bottom: 4px solid white;
-}
-
-#wave-form {
-    grid-column: 1 / -1;
-    grid-row: 3 / -1;
-
-    position: absolute;
-    bottom: 0;
+    border-bottom: 4px solid var(--text-color-darkMode);
+    border-radius: 25%;
 }
 
 /* About me section*/
@@ -136,11 +172,9 @@ html, body{
 
 #about_me_parragraf > legend {
     padding: 0 20px;
-    font-size: 1.8rem;
 }
 
 #about_me_parragraf > p {
-    font-size: 1.1rem;
     width: 100%;
 }
 
@@ -149,7 +183,7 @@ html, body{
     padding-top: 20px;
 }
 
-.projects h1 {
+.projects h2 {
     width: fit-content;
     margin: 0 auto;
 }
@@ -183,10 +217,10 @@ html, body{
     width: 300px;
     height: 350px;
 
-    background-color: rgba(36, 41, 46, 0.7);
+    background-color: var(--card-color-darkMode);
     backdrop-filter: blur(5px);
-    color: white;
-    border: 5px solid transparent;
+
+    border: 3px solid transparent;
     border-radius: 5px;
 
     display: grid;
@@ -203,7 +237,8 @@ html, body{
 }
 
 .card:hover {
-    background-color: rgb(36, 41, 46, 1);
+    background-color: var(--backgroundCard-color-darkMode);
+    border: 3px solid var(--borderCard-color-darkMode);
     box-shadow: 10px 10px 10px rgba(18, 18, 18, 0.8);
     transition-duration: .2s;
 }
@@ -216,7 +251,7 @@ input[type="checkbox"] {
     grid-column: -1/1;
     grid-row: 2/3;
 
-    background-color: rgb(36, 41, 46, 1);
+    background-color: var(--backgroundCard-color-darkMode);
     border-radius: 4px;
 
     display: flex;
@@ -241,10 +276,10 @@ input[type="checkbox"]:checked + label .buttons {
     padding: 5px;
     border-radius: 50%;
 
-    font-size: 1.5rem;
     text-decoration: none;
-    color: #ffffffcb;
-    background-color: rgb(26, 28, 29);
+    font-size: 1.8rem;
+    color: var(--text-color-darkMode);
+    background-color: var(--background-color-darkMode);
 
     display: grid;
     grid-template-columns: 1fr;
@@ -257,12 +292,8 @@ input[type="checkbox"]:checked + label .buttons {
 }
 
 .buttons a:hover {
-    background-color: rgb(53, 59, 66);
+    background-color: var(--borderCard-color-darkMode);
     transition-duration: .2s;
-}
-
-.buttons p {
-    width: 100%;
 }
 
 .card.empty {
@@ -308,10 +339,10 @@ input[type="checkbox"]:checked + label .buttons {
 }
 
 .tecnologies li {
-    background-color: rgba(24, 24, 24, 0.708);
-    color: aliceblue;
+    background-color: var(--tecnologiesBackground-color-darkMode);
 
     padding: 5px 10px;
+    border-radius: 4px;
 
     text-align: center;
 }
@@ -329,7 +360,7 @@ input[type="checkbox"]:checked + label .buttons {
     width: calc(100% - 100px);
 }
 
-.container_contact h1 {
+.container_contact h2 {
     height: fit-content;
 }
 
@@ -337,6 +368,7 @@ input[type="checkbox"]:checked + label .buttons {
     width: calc(100% - 10px);
     margin: 10px auto 0 auto;
     padding: 10px;
+    font-size: 1.7rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -349,8 +381,7 @@ a[class="link"] {
     width: fit-content;
     padding: 5px 10px;
     text-decoration: none;
-    color: #edf6ff;
-    font-size: 1.7rem;
+    color: var(--text-color-darkMode);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -366,6 +397,7 @@ a[class="link"]:hover {
 
 a[class="link"] > p {
     height: fit-content;
+    font-size: unset;
 }
 
 footer {
@@ -373,5 +405,5 @@ footer {
     height: 50px;
     display: grid;
     place-content: center;
-    border-top: 2px solid white;
+    border-top: 2px solid var(--text-color-darkMode);
 }
