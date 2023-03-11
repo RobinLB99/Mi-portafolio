@@ -13,7 +13,7 @@
     --borderCard-color-darkMode: rgb(67, 74, 83);
     --tecnologiesBackground-color-darkMode: rgba(24, 24, 24, 0.7);
 
-    /*Light Mode*/
+    /*
     --text-color-lightMode: rgb(24, 24, 26);
     --background-color-lightMode: rgb(24, 24, 26);
     --navbar-lightMode: #18181a56;
@@ -26,6 +26,7 @@
     --backgroundCard-color-lightMode: rgb(36, 41, 46);
     --borderCard-color-darkMode: rgb(67, 74, 83);
     --tecnologiesBackground-color-lightMode: rgba(24, 24, 24, 0.7);
+    */
 }
 
 * {
