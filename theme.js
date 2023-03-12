@@ -57,21 +57,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (click === 1) {
-      auto.style.display = 'block'
+      auto.style.display = 'flex'
       sol.style.display = 'none'
       luna.style.display = 'none'
       readTheme(click);
 
     } else if (click === 2) {
       auto.style.display = 'none'
-      sol.style.display = 'block'
+      sol.style.display = 'flex'
       luna.style.display = 'none'
       readTheme(click);
 
     } else {
       auto.style.display = 'none'
       sol.style.display = 'none'
-      luna.style.display = 'block'
+      luna.style.display = 'flex'
       readTheme(click);
     }
 

@@ -77,7 +77,7 @@ p {
 }
 
 #interruptor {
-    width: 50px;
+    width: fit-content;
     height: 100%;
     border-radius: 4px;
 
@@ -96,6 +96,17 @@ p {
 }
 
 #auto, #sol, #luna {
+    padding: 0 15px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#auto i, #sol i, #luna i {
     animation: rotar .3s;
 }
 
