@@ -37,7 +37,7 @@
 
     .menu a:hover {
         /*background-color: #edf6ff2a;*/
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid var(--text-color-darkMode);
         transition-duration: .3s
     }
 
