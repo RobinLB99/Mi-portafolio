@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const sol = document.getElementById("sol")
   const luna = document.getElementById('luna')
 
+  const logo = document.querySelector('.logo')
+
   const root = document.querySelector(':root')
 
   const readTheme = (theme) => {
@@ -29,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     root.style.setProperty('--backgroundCard-color', 'rgb(38 ,39 ,43)');
     root.style.setProperty('--borderCard-color', 'rgb(93 ,93 ,93)');
     root.style.setProperty('--tecnologiesBackground-color', 'rgba(61 ,61 ,61 ,.745)');
+    logo.style.setProperty('filter', 'none')
   }
 
   const light_theme = () => {
@@ -40,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     root.style.setProperty('--backgroundCard-color', 'rgba(232 ,232 ,232)');
     root.style.setProperty('--borderCard-color', 'rgb(255 ,255 ,255)');
     root.style.setProperty('--tecnologiesBackground-color', 'rgba(201 ,207 ,220,.947)');
+    logo.style.setProperty('filter', 'invert()')
   }
 
   let click = 1
