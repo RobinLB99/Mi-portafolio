@@ -23,6 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const dark_theme = () => {
+    root.style.setProperty('--scrollbar-thumb-color', 'rgba(255, 255, 255, 0.5)');
+    root.style.setProperty('--scrollbar-track-color', 'rgba(93, 93, 93, 0.5)');
+
     root.style.setProperty('--text-color', 'rgb(237, 246, 255)');
     root.style.setProperty('--background-color', 'rgb(24, 24, 26)');
     root.style.setProperty('--navbar', '#18181a56');
@@ -35,6 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const light_theme = () => {
+    root.style.setProperty('--scrollbar-thumb-color', 'rgba(0, 0, 0, 0.5)');
+    root.style.setProperty('--scrollbar-track-color', 'rgba(255, 255, 255, 0.5)');
+
     root.style.setProperty('--text-color', 'rgb(18, 9, 0)');
     root.style.setProperty('--background-color', 'rgb(231, 231, 229)');
     root.style.setProperty('--navbar', '#e7e7e791');
