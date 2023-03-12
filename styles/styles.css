@@ -10,9 +10,9 @@
         rgba(29, 28, 28, 0.158)
     ), url("../img/backgrounds/artur-shamsutdinov-unsplash.jpg"), no-repeat, center;
     --card-color-darkMode: rgba(36, 41, 46, 0.6);
-    --backgroundCard-color-darkMode: rgba(32, 32, 32);
+    --backgroundCard-color-darkMode: rgb(38, 39, 43);
     --borderCard-color-darkMode: rgb(93, 93, 93);
-    --tecnologiesBackground-color-darkMode: rgba(62, 62, 62, 0.745);
+    --tecnologiesBackground-color-darkMode: rgba(61, 61, 61, 0.745);
 
 
     /*Light  Mode*/
