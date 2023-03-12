@@ -1,22 +1,29 @@
 :root {
-    /*Dark Mode*/
+    --text-color: none;
+    --background-color: none;
+    --navbar: none;
+    --background: none;
+    --card-color: none;
+    --backgroundCard-color: none;
+    --borderCard-color: none;
+    --tecnologiesBackground-color: none;
 
-    --text-color: rgb(237, 246, 255);
+    /*Dark Mode*/
+    /* --text-color: rgb(237, 246, 255);
     --background-color: rgb(24, 24, 26);
     --navbar: #18181a56;
     --background: linear-gradient(
         130deg,
         rgba(17, 17, 17, 0.37),
         rgba(29, 28, 28, 0.158)
-    ), url("../img/backgrounds/artur-shamsutdinov-unsplash.jpg"), no-repeat, center;
+        ),
+        url("../img/backgrounds/artur-shamsutdinov-unsplash.jpg"), no-repeat, center;
     --card-color: rgba(36, 41, 46, 0.6);
     --backgroundCard-color: rgb(38, 39, 43);
     --borderCard-color: rgb(93, 93, 93);
-    --tecnologiesBackground-color: rgba(61, 61, 61, 0.745);
-
+    --tecnologiesBackground-color: rgba(61, 61, 61, 0.745); */
 
     /*Light  Mode*/
-
     /* --text-color: rgb(18, 9, 0);
     --background-color: rgb(231, 231, 229);
     --navbar: #e7e7e791;
@@ -24,8 +31,7 @@
         130deg,
         rgba(238, 238, 238, 0.441),
         rgba(226, 227, 227, 0.599)
-    ), url("../img/backgrounds/christopher-gower-unsplash.jpg"), no-repeat,
-    center;
+    ), url("../img/backgrounds/christopher-gower-unsplash.jpg"), no-repeat, center;
     --card-color: rgba(219, 214, 209, 0.4);
     --backgroundCard-color: rgba(232, 232, 232);
     --borderCard-color: rgb(255, 255, 255);
