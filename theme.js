@@ -34,22 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sol.style.display = 'none'
       luna.style.display = 'block'
     }
+
   })
-
-  // const readTheme = (theme) => {
-	// 	if (theme === 2) {
-	// 		lightTheme()
-	// 	} else if (theme === 3) {
-	// 		darkTheme()
-	// 	} else if (theme === 1) {
-	// 		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-	// 			darkTheme()
-	// 		} else {
-	// 			lightTheme()
-	// 		}
-	// 	}
-	// }
-
-	// readTheme(click);
 
 })
