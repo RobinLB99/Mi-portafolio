@@ -1,5 +1,6 @@
 :root {
     /*Dark Mode*/
+
     --text-color-darkMode: rgb(237, 246, 255);
     --background-color-darkMode: rgb(24, 24, 26);
     --navbar-darkMode: #18181a56;
@@ -9,23 +10,26 @@
         rgba(29, 28, 28, 0.158)
     ), url("../img/backgrounds/artur-shamsutdinov-unsplash.jpg"), no-repeat, center;
     --card-color-darkMode: rgba(36, 41, 46, 0.6);
-    --backgroundCard-color-darkMode: rgb(36, 41, 46);
-    --borderCard-color-darkMode: rgb(67, 74, 83);
-    --tecnologiesBackground-color-darkMode: rgba(24, 24, 24, 0.7);
+    --backgroundCard-color-darkMode: rgb(38, 39, 43);
+    --borderCard-color-darkMode: rgb(93, 93, 93);
+    --tecnologiesBackground-color-darkMode: rgba(61, 61, 61, 0.745);
 
-    /*Light Mode*/
-    --text-color-lightMode: rgb(18, 9, 0);
-    --background-color-lightMode: rgb(231, 231, 229);
-    --navbar-lightMode: #18181a56;
-    --background-light: linear-gradient(
+
+    /*Light  Mode*/
+
+    /* --text-color-darkMode: rgb(18, 9, 0);
+    --background-color-darkMode: rgb(231, 231, 229);
+    --navbar-darkMode: #e7e7e5a9;
+    --background_dark: linear-gradient(
         130deg,
-        rgba(17, 17, 17, 0.37),
-        rgba(29, 28, 28, 0.158)
-    ), url("../img/backgrounds/altumcode-unsplash.jpg"), no-repeat, center;
-    --card-color-lightMode: rgba(36, 41, 46, 0.6);
-    --backgroundCard-color-lightMode: rgb(36, 41, 46);
-    --borderCard-color-darkMode: rgb(67, 74, 83);
-    --tecnologiesBackground-color-lightMode: rgba(24, 24, 24, 0.7);
+        rgba(238, 238, 238, 0.441),
+        rgba(226, 227, 227, 0.599)
+    ), url("../img/backgrounds/christopher-gower-unsplash.jpg"), no-repeat,
+    center;
+    --card-color-darkMode: rgba(219, 214, 209, 0.4);
+    --backgroundCard-color-darkMode: rgba(232, 232, 232);
+    --borderCard-color-darkMode: rgb(255, 255, 255);
+    --tecnologiesBackground-color-darkMode: rgba(201, 207, 220, 0.947); */
 }
 
 * {
