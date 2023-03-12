@@ -9,6 +9,14 @@
         justify-content: center;
     }
 
+    #interruptor {
+        width: 100%;
+        height: 50px;
+
+        position: fixed;
+        top: 10px;
+    }
+
     .menu {
         display: flex;
         flex-direction: column;

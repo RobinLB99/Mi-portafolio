@@ -8,6 +8,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        flex-direction: row-reverse;
+    }
+
+    #interruptor {
+        width: 50px;
+        height: 100%;
+
+        margin-left: 10px;
+
+        font-size: 1.6rem;
     }
 
     .menu a {
