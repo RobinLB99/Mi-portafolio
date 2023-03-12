@@ -21,6 +21,10 @@
         font-size: 1.6rem;
     }
 
+    #auto p, #sol p, #luna p {
+        display: none;
+    }
+
     .menu a {
         display: flex;
         justify-content: center;
