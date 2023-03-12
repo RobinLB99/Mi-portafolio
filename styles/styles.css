@@ -1,9 +1,18 @@
 :root {
+    --text-color: none;
+    --background-color: none;
+    --navbar: none;
+    --background: none;
+    --card-color: none;
+    --backgroundCard-color: none;
+    --borderCard-color: none;
+    --tecnologiesBackground-color: none;
+
     /*Dark Mode*/
-    --text-color-darkMode: rgb(237, 246, 255);
-    --background-color-darkMode: rgb(24, 24, 26);
-    --navbar-darkMode: #18181a56;
-    --background_dark: linear-gradient(
+    /* --text-color: rgb(237, 246, 255);
+    --background-color: rgb(24, 24, 26);
+    --navbar: #18181a56;
+    --background: linear-gradient(
         130deg,
         rgba(17, 17, 17, 0.37),
         rgba(29, 28, 28, 0.158)
@@ -37,11 +46,10 @@
 
 html, body{
     font-family: Lato, Arial, Helvetica, sans-serif;
-    background-color: var(--background-color-darkMode);
-    color: var(--text-color-darkMode);
+    background-color: var(--background-color);
+    color: var(--text-color);
     scroll-behavior: smooth;
-    text-shadow: var(--background-color-darkMode) 2px 2px 2px;
-    color: var(--text-color-darkMode)
+    color: var(--text-color)
 }
 
 h1 {
@@ -61,15 +69,43 @@ p {
 }
 
 .navbar {
-    background-color: var(--navbar-darkMode);
+    background-color: var(--navbar);
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     z-index: 10;
 }
 
+#interruptor {
+    width: 50px;
+    height: 100%;
+    border-radius: 4px;
+
+    font-size: 1.3rem;
+
+    display: grid;
+    place-items: center;
+
+    cursor: pointer;
+    transition-duration: .2s;
+}
+
+#interruptor:hover {
+    background-color: #ffffff3f;
+    transition-duration: .2s;
+}
+
+#auto, #sol, #luna {
+    animation: rotar .3s;
+}
+
+#sol, #luna {
+    display: none;
+}
+
 .menu > a {
     text-decoration: none;
-    color: var(--text-color-darkMode);
+    color: var(--text-color);
 }
 
 .link_nav .fx3 {
@@ -87,7 +123,7 @@ p {
 }
 
 .home, .projects {
-    background: var(--background_dark);
+    background: var(--background);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -131,10 +167,11 @@ p {
 
 .presentation * {
     width: fit-content;
+    text-shadow: var(--background-color) 2px 2px 2px;
 }
 
 .presentation a {
-    color: var(--text-color-darkMode);
+    color: var(--text-color);
     text-decoration: none;
 
     display: flex;
@@ -152,7 +189,7 @@ p {
     height: 250px;
     width: auto;
 
-    border-bottom: 4px solid var(--text-color-darkMode);
+    border-bottom: 4px solid var(--text-color);
     border-radius: 25%;
 }
 
@@ -210,6 +247,7 @@ p {
     flex-wrap: wrap;
     width: calc(100% - 30px);
     height: calc(100% - 55px);
+    text-shadow: unset;
 }
 
 /*Nuevo codigo*/
@@ -218,7 +256,8 @@ p {
     width: 300px;
     height: 350px;
 
-    background-color: var(--card-color-darkMode);
+    background-color: var(--card-color);
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 
@@ -230,7 +269,6 @@ p {
     grid-template-columns: 1fr;
 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);;
 
     overflow: hidden;
     cursor: pointer;
@@ -239,9 +277,9 @@ p {
 }
 
 .card:hover {
-    background-color: var(--backgroundCard-color-darkMode);
-    border: 3px solid var(--borderCard-color-darkMode);
-    box-shadow: 10px 10px 10px rgba(18, 18, 18, 0.8);
+    background-color: var(--backgroundCard-color);
+    border: 3px solid var(--borderCard-color);
+    box-shadow: 10px 10px 10px rgba(28, 28, 28, 0.578);
     transition-duration: .2s;
 }
 
@@ -253,7 +291,7 @@ input[type="checkbox"] {
     grid-column: -1/1;
     grid-row: 2/3;
 
-    background-color: var(--backgroundCard-color-darkMode);
+    background-color: var(--backgroundCard-color);
     border-radius: 4px;
 
     display: flex;
@@ -280,8 +318,8 @@ input[type="checkbox"]:checked + label .buttons {
 
     text-decoration: none;
     font-size: 1.8rem;
-    color: var(--text-color-darkMode);
-    background-color: var(--background-color-darkMode);
+    color: var(--text-color);
+    background-color: var(--tecnologiesBackground-color);
 
     display: grid;
     grid-template-columns: 1fr;
@@ -294,7 +332,7 @@ input[type="checkbox"]:checked + label .buttons {
 }
 
 .buttons a:hover {
-    background-color: var(--borderCard-color-darkMode);
+    background-color: var(--borderCard-color);
     transition-duration: .2s;
 }
 
@@ -308,7 +346,7 @@ input[type="checkbox"]:checked + label .buttons {
     width: 100%;
     height: 100%;
 
-    border-radius: 4px;
+    border-radius: 4px 4px 0 0;
 
     object-fit: cover;
 
@@ -341,7 +379,7 @@ input[type="checkbox"]:checked + label .buttons {
 }
 
 .tecnologies li {
-    background-color: var(--tecnologiesBackground-color-darkMode);
+    background-color: var(--tecnologiesBackground-color);
 
     padding: 5px 10px;
     border-radius: 4px;
@@ -383,7 +421,7 @@ a[class="link"] {
     width: fit-content;
     padding: 5px 10px;
     text-decoration: none;
-    color: var(--text-color-darkMode);
+    color: var(--text-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -407,5 +445,5 @@ footer {
     height: 50px;
     display: grid;
     place-content: center;
-    border-top: 2px solid var(--text-color-darkMode);
+    border-top: 2px solid var(--text-color);
 }

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/mobile_mode.css">
     <link rel="stylesheet" href="./styles/tablet_mode.css">
     <link rel="stylesheet" href="./styles/desktop_mode.css">
+    <link rel="stylesheet" href="./styles/animations.css">
     <link rel="shortcut icon" type="image/png" href="./img/Logo/RL.png"/>
     <title>Robin Lugo Boero</title>
     <script>
@@ -30,11 +31,17 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="border"></div>
+        <div class="border uno"></div>
         <div class="container-logo">
             <img class="logo" src="./img/Logo/RObin_Lugo_B.__1_-removebg-preview.png" alt="Logo">
         </div>
-        <div class="separador"></div>
+        <div class="separador uno"></div>
+        <div id="interruptor">
+            <div id="auto"><i class="fa-solid fa-a"></i></div>
+            <div id="sol"><i class="fa-solid fa-sun"></i></div>
+            <div id="luna"><i class="fa-solid fa-moon"></i></div>
+        </div>
+        <div class="separador dos"></div>
         <div class="menu">
             <a href="#home" class="link_nav">
                 <p class="fx3"><i class="fas  fa-home"></i></p>
@@ -53,7 +60,7 @@
                 <p class="text">Contactame</p>
             </a>
         </div>
-        <div class="border"></div>
+        <div class="border dos"></div>
     </nav>
     <main>
         <section class="seccion home" id="home">
@@ -87,15 +94,15 @@
                         <figcaption class="project_description">
                             <h3 class="name-project">Calculadora</h3 >
                             <ul class="tecnologies">
-                                <li><p>HTML</p></li>
-                                <li><p>CSS</p></li>
-                                <li><p>Javascript</p></li>
+                                <li class="tecnologie"><p>HTML</p></li>
+                                <li class="tecnologie"><p>CSS</p></li>
+                                <li class="tecnologie"><p>Javascript</p></li>
                             </ul>
                             <p class="descrip_project">Calculador de operaciones matematicas escenciales.</p>
                         </figcaption>
                         <div class="buttons">
-                            <a href="https://github.com/RobinLB99/Calculadora" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://robinlb99.github.io/Calculadora/" target="_blank">
+                            <a class="button" href="https://github.com/RobinLB99/Calculadora" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a class="button" href="https://robinlb99.github.io/Calculadora/" target="_blank">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
                         </div>
@@ -106,15 +113,15 @@
                         <figcaption class="project_description">
                             <h3 class="name-project">Inventario de biblioteca</h3 >
                             <ul class="tecnologies">
-                                <li><p>HTML</p></li>
-                                <li><p>CSS</p></li>
-                                <li><p>Javascript</p></li>
+                                <li class="tecnologie"><p>HTML</p></li>
+                                <li class="tecnologie"><p>CSS</p></li>
+                                <li class="tecnologie"><p>Javascript</p></li>
                             </ul>
                             <p class="descrip_project">Software de gestion de inventario de biblioteca</p>
                         </figcaption>
                         <div class="buttons">
-                            <a href="https://github.com/RobinLB99/Biblioteca-Inventario" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://robinlb99.github.io/Biblioteca-Inventario/" target="_blank">
+                            <a class="button" href="https://github.com/RobinLB99/Biblioteca-Inventario" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a class="button" href="https://robinlb99.github.io/Biblioteca-Inventario/" target="_blank">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
                         </div>
@@ -125,14 +132,14 @@
                         <figcaption class="project_description">
                             <h3 class="name-project">Mi portafolio</h3 >
                             <ul class="tecnologies">
-                                <li><p>HTML</p></li>
-                                <li><p>CSS</p></li>
-                                <li><p>Javascript</p></li>
+                                <li class="tecnologie"><p>HTML</p></li>
+                                <li class="tecnologie"><p>CSS</p></li>
+                                <li class="tecnologie"><p>Javascript</p></li>
                             </ul>
                             <p class="descrip_project">Portafolio personal en el cual estan.</p>
                         </figcaption>
                         <div class="buttons">
-                            <a href="https://github.com/RobinLB99/Mi-portafolio" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a class="button" href="https://github.com/RobinLB99/Mi-portafolio" target="_blank"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </label>
                     <input type="checkbox" name="option" id="checkbox4" onclick="deselectAllCheckboxesExcept(this)">
@@ -141,16 +148,16 @@
                         <figcaption class="project_description">
                             <h3 class="name-project">Landing Page</h3 >
                             <ul class="tecnologies">
-                                <li><p>HTML</p></li>
-                                <li><p>CSS</p></li>
+                                <li class="tecnologie"><p>HTML</p></li>
+                                <li class="tecnologie"><p>CSS</p></li>
                             </ul>
                             <p class="descrip_project">Landing Page del producto - freeCodeCamp</p>
                         </figcaption>
                         <div class="buttons">
-                            <a href="https://github.com/RobinLB99/Landing-Page" target="_blank">
+                            <a class="button" href="https://github.com/RobinLB99/Landing-Page" target="_blank">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-                            <a href="https://robinlb99.github.io/Landing-Page/" target="_blank">
+                            <a class="button" href="https://robinlb99.github.io/Landing-Page/" target="_blank">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
                         </div>
@@ -161,16 +168,16 @@
                         <figcaption class="project_description">
                             <h3 class="name-project">Pagina de documentacion tecnica</h3 >
                             <ul class="tecnologies">
-                                <li><p>HTML</p></li>
-                                <li><p>CSS</p></li>
+                                <li class="tecnologie"><p>HTML</p></li>
+                                <li class="tecnologie"><p>CSS</p></li>
                             </ul>
                             <p class="descrip_project">Modelo básico de página de documentación técnica.</p>
                         </figcaption>
                         <div class="buttons">
-                            <a href="https://github.com/RobinLB99/Paguina-de-documentacion-tecnica" target="_blank">
+                            <a class="button" href="https://github.com/RobinLB99/Paguina-de-documentacion-tecnica" target="_blank">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-                            <a href="https://robinlb99.github.io/Paguina-de-documentacion-tecnica/" target="_blank">
+                            <a class="button" href="https://robinlb99.github.io/Paguina-de-documentacion-tecnica/" target="_blank">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
                         </div>
@@ -181,16 +188,16 @@
                         <figcaption class="project_description">
                             <h3 class="name-project">Encuesta</h3 >
                             <ul class="tecnologies">
-                                <li><p>HTML</p></li>
-                                <li><p>CSS</p></li>
+                                <li class="tecnologie"><p>HTML</p></li>
+                                <li class="tecnologie"><p>CSS</p></li>
                             </ul>
                             <p class="descrip_project">Encuesta desarrollada como parte del proyecto FreeCodeCamp.</p>
                         </figcaption>
                         <div class="buttons">
-                            <a href="https://github.com/RobinLB99/Encuesta" target="_blank">
+                            <a class="button" href="https://github.com/RobinLB99/Encuesta" target="_blank">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-                            <a href="https://robinlb99.github.io/Encuesta/" target="_blank">
+                            <a class="button" href="https://robinlb99.github.io/Encuesta/" target="_blank">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
                         </div>
@@ -201,16 +208,16 @@
                         <figcaption class="project_description">
                             <h3 class="name-project">Tribute Page</h3 >
                             <ul class="tecnologies">
-                                <li><p>HTML</p></li>
-                                <li><p>CSS</p></li>
+                                <li class="tecnologie"><p>HTML</p></li>
+                                <li class="tecnologie"><p>CSS</p></li>
                             </ul>
                             <p class="descrip_project">Tribute page dedicated to Norman Borlaug.</p>
                         </figcaption>
                         <div class="buttons">
-                            <a href="https://github.com/RobinLB99/Tribute-Page" target="_blank">
+                            <a class="button" href="https://github.com/RobinLB99/Tribute-Page" target="_blank">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-                            <a href="https://robinlb99.github.io/Tribute-Page/" target="_blank">
+                            <a class="button" href="https://robinlb99.github.io/Tribute-Page/" target="_blank">
                                 <i class="fa-solid fa-globe"></i>
                             </a>
                         </div>
@@ -241,5 +248,6 @@
     <footer>
         <p>Copyright © 2023 | Robin Joel Lugo Boero</p>
     </footer>
+    <script src="./theme.js"></script>
 </body>
 </html>
