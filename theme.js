@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const luna = document.getElementById('luna')
 
   const logo = document.querySelector('.logo')
+  const blob = document.querySelector('#blob_1')
 
   const root = document.querySelector(':root')
 
@@ -35,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     root.style.setProperty('--borderCard-color', 'rgb(93 ,93 ,93)');
     root.style.setProperty('--tecnologiesBackground-color', 'rgba(61 ,61 ,61 ,.745)');
     logo.style.setProperty('filter', 'none')
+    blob.src = './img/Formas/blob-dark.png'
   }
 
   const light_theme = () => {
@@ -50,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     root.style.setProperty('--borderCard-color', 'rgb(255 ,255 ,255)');
     root.style.setProperty('--tecnologiesBackground-color', 'rgba(201 ,207 ,220,.947)');
     logo.style.setProperty('filter', 'invert()')
+    blob.src = './img/Formas/blob-light.png'
   }
 
   let click = 1
