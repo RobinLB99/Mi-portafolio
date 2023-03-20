@@ -17,6 +17,10 @@
         top: 10px;
     }
 
+    #interruptor p {
+        display: none;
+    }
+
     #auto p, #sol p, #luna p {
         display: none;
     }
