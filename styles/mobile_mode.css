@@ -21,6 +21,10 @@
         font-size: 1.6rem;
     }
 
+    #interruptor p {
+        display: none;
+    }
+
     #auto p, #sol p, #luna p {
         display: none;
     }

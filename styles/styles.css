@@ -108,14 +108,18 @@ p {
 }
 
 #interruptor {
-    width: fit-content;
+    width: 100px;
     height: 100%;
     border-radius: 4px;
 
     font-size: 1.3rem;
 
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
     cursor: pointer;
     transition-duration: .2s;
@@ -127,7 +131,7 @@ p {
 }
 
 #auto, #sol, #luna {
-    padding: 0 15px;
+    width: fit-content;
 
     display: flex;
     flex-direction: row;
