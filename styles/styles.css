@@ -7,35 +7,6 @@
     --backgroundCard-color: none;
     --borderCard-color: none;
     --tecnologiesBackground-color: none;
-
-    /*Dark Mode*/
-    /* --text-color: rgb(237, 246, 255);
-    --background-color: rgb(24, 24, 26);
-    --navbar: #18181a56;
-    --background: linear-gradient(
-        130deg,
-        rgba(17, 17, 17, 0.37),
-        rgba(29, 28, 28, 0.158)
-    ), url("../img/backgrounds/artur-shamsutdinov-unsplash.jpg"), no-repeat, center;
-    --card-color-darkMode: rgba(36, 41, 46, 0.6);
-    --backgroundCard-color-darkMode: rgb(36, 41, 46);
-    --borderCard-color-darkMode: rgb(67, 74, 83);
-    --tecnologiesBackground-color-darkMode: rgba(24, 24, 24, 0.7);
-
-    /*
-    --text-color-lightMode: rgb(24, 24, 26);
-    --background-color-lightMode: rgb(24, 24, 26);
-    --navbar-lightMode: #18181a56;
-    --background-light: linear-gradient(
-        130deg,
-        rgba(17, 17, 17, 0.37),
-        rgba(29, 28, 28, 0.158)
-    ), url("../img/backgrounds/altumcode-unsplash.jpg"), no-repeat, center;
-    --card-color-lightMode: rgba(36, 41, 46, 0.6);
-    --backgroundCard-color-lightMode: rgb(36, 41, 46);
-    --borderCard-color-darkMode: rgb(67, 74, 83);
-    --tecnologiesBackground-color-lightMode: rgba(24, 24, 24, 0.7);
-    */
 }
 
 /* Para WebKit */
@@ -66,7 +37,6 @@
     background-color: var(--scrollbar-track-color);
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -75,12 +45,14 @@
     box-sizing: border-box;
 }
 
-html, body{
-    font-family: Lato, Arial, Helvetica, sans-serif;
+html,
+body {
+    /* font-family: Lato, Arial, Helvetica, sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     scroll-behavior: smooth;
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 h1 {
@@ -88,11 +60,11 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem)
+    font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 h3 {
-    font-size: clamp(1rem, 2vw, 1.3rem)
+    font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
 p {
@@ -122,15 +94,17 @@ p {
     gap: 10px;
 
     cursor: pointer;
-    transition-duration: .2s;
+    transition-duration: 0.2s;
 }
 
 #interruptor:hover {
     background-color: #ffffff3f;
-    transition-duration: .2s;
+    transition-duration: 0.2s;
 }
 
-#auto, #sol, #luna {
+#auto,
+#sol,
+#luna {
     width: fit-content;
 
     display: flex;
@@ -141,11 +115,14 @@ p {
     align-items: center;
 }
 
-#auto i, #sol i, #luna i {
-    animation: rotar .3s;
+#auto i,
+#sol i,
+#luna i {
+    animation: rotar 0.3s;
 }
 
-#sol, #luna {
+#sol,
+#luna {
     display: none;
 }
 
@@ -168,7 +145,8 @@ p {
     margin: 5px auto 0 auto;
 }
 
-.home, .projects {
+.home,
+.projects {
     background: var(--background);
     background-size: cover;
     background-attachment: fixed;
@@ -242,8 +220,8 @@ p {
 /* About me section*/
 .about_me {
     display: grid;
-    grid-template-columns: .5fr .5fr 2fr .5fr .5fr;
-    grid-template-rows: .5fr 1fr .5fr;
+    grid-template-columns: 0.5fr 0.5fr 2fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
 }
 
 .blob_1 {
@@ -279,7 +257,6 @@ p {
 #about_me_parragraf > p {
     width: 100%;
 }
-
 
 .projects {
     padding-top: 20px;
@@ -337,14 +314,14 @@ p {
     overflow: hidden;
     cursor: pointer;
 
-    transition-duration: .2s;
+    transition-duration: 0.2s;
 }
 
 .card:hover {
     background-color: var(--backgroundCard-color);
     border: 3px solid var(--borderCard-color);
     box-shadow: 10px 10px 10px rgba(28, 28, 28, 0.578);
-    transition-duration: .2s;
+    transition-duration: 0.2s;
 }
 
 input[type="checkbox"] {
@@ -366,13 +343,12 @@ input[type="checkbox"] {
     align-items: center;
 
     clip-path: circle(0 at left);
-    transition: clip-path .2s;
+    transition: clip-path 0.2s;
 }
 
 input[type="checkbox"]:checked + label .buttons {
     clip-path: circle(150% at left);
 }
-
 
 .buttons a {
     width: 50px;
@@ -390,14 +366,14 @@ input[type="checkbox"]:checked + label .buttons {
     gap: 5px;
     place-items: center;
 
-    transition-duration: .2s;
+    transition-duration: 0.2s;
 
     cursor: pointer;
 }
 
 .buttons a:hover {
     background-color: var(--borderCard-color);
-    transition-duration: .2s;
+    transition-duration: 0.2s;
 }
 
 .card.empty {
@@ -491,12 +467,12 @@ a[class="link"] {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
 }
 
 a[class="link"]:hover {
     transform: rotate(-15deg);
-    transition-duration: .3s;
+    transition-duration: 0.3s;
 }
 
 a[class="link"] > p {

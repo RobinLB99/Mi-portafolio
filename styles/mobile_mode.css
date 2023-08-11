@@ -1,5 +1,4 @@
-@media (max-width:480px) {
-
+@media (max-width: 480px) {
     .navbar {
         width: 100%;
         height: 50px;
@@ -25,7 +24,9 @@
         display: none;
     }
 
-    #auto p, #sol p, #luna p {
+    #auto p,
+    #sol p,
+    #luna p {
         display: none;
     }
 
@@ -46,7 +47,8 @@
         display: none;
     }
 
-    .border, .separador {
+    .border,
+    .separador {
         display: none;
     }
 
