@@ -1,0 +1,56 @@
+@import "bootstrap/scss/bootstrap";
+// @import "@fortawesome/fontawesome-free/css/all.min.css";
+
+:root {
+    --transparent-dark: #ffffff2d;
+}
+
+body {
+    transition-duration: 0.3s;
+}
+
+nav.navbar {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    background-color: var(--transparent-dark);
+
+    div.container-fluid {
+        height: 100%;
+
+        div.container {
+            width: fit-content;
+            height: 100%;
+
+            img#logo {
+                width: fit-content;
+                height: 90% !important;
+            }
+
+            .logo-dark-mode {
+                filter: invert(0);
+            }
+
+            .logo-light-mode {
+                filter: invert(1);
+            }
+        }
+
+        a#toggleMode {
+            height: 100%;
+            width: fit-content;
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            transition-duration: 0.3s;
+            cursor: pointer;
+        }
+
+        a#toggleMode:hover {
+            background-color: var(--transparent-dark);
+            transition-duration: 0.3s;
+        }
+    }
+}
