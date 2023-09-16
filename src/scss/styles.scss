@@ -1,11 +1,10 @@
 @import "bootstrap/scss/bootstrap";
-// @import "@fortawesome/fontawesome-free/css/all.min.css";
 
 :root {
     --transparent-dark: #ffffff2d;
 }
 
-body {
+* {
     transition-duration: 0.3s;
 }
 
@@ -17,7 +16,7 @@ nav.navbar {
 
     background-color: var(--transparent-dark);
 
-    div.container-fluid {
+    div.content {
         height: 100%;
 
         div.container {
@@ -38,19 +37,79 @@ nav.navbar {
             }
         }
 
-        a#toggleMode {
-            height: 100%;
-            width: fit-content;
-            background-color: transparent;
-            border: 1px solid transparent;
-            border-radius: 4px;
-            transition-duration: 0.3s;
-            cursor: pointer;
+        #content-link {
+            max-width: 1000px;
+            width: 100%;
         }
 
-        a#toggleMode:hover {
-            background-color: var(--transparent-dark);
-            transition-duration: 0.3s;
+        #menu-nav {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        #content-switch {
+            width: fit-content;
+        }
+
+        .toggle {
+            position: relative;
+            width: 33px;
+            height: 20px;
+            display: inline-block;
+            margin: 15px 10px;
+        }
+
+        .toggle .slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: 0.4s;
+            border-radius: 20px;
+        }
+
+        .toggle .slider:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .toggle .slider {
+            background-color: #565d63;
+        }
+
+        .toggle.on .slider {
+            background-color: #4287f5;
+        }
+
+        .toggle.on .slider:before {
+            transform: translateX(14px);
+            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .toggle .label {
+            position: absolute;
+            left: 50px;
+            top: 4px;
+            vertical-align: middle;
+        }
+
+        input {
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            position: absolute;
+            z-index: 100;
+            cursor: pointer;
+            vertical-align: middle;
         }
     }
 }
