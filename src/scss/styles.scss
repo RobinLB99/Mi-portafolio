@@ -1,115 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import "bootstrap/scss/bootstrap";
+@import "./navbar.scss";
+@import "./home.scss";
 
 :root {
     --transparent-dark: #ffffff2d;
+    --background-dark: linear-gradient(
+            130deg,
+            rgba(17, 17, 17, 0.37),
+            rgba(29, 28, 28, 0.158)
+        ),
+        url("../../public/wallpaper-dark.webp"), no-repeat, center;
+
+    --background-light: linear-gradient(
+            130deg,
+            rgba(238, 238, 238, 0.441),
+            rgba(226, 227, 227, 0.599)
+        ),
+        url("../../public/wallpaper-light.webp"), no-repeat,
+        center;
 }
 
 * {
     transition-duration: 0.3s;
+    font-family: "Lato", "Segoe UI", Tahoma, Geneva, BlinkMacSystemFont, Roboto,
+        Oxygen, Ubuntu, Cantarell, Verdana, "Open Sans", "Helvetica Neue",
+        sans-serif, "Segoe UI", system-ui, -apple-system;
 }
 
-nav.navbar {
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-
-    background-color: var(--transparent-dark);
-
-    div.content {
-        height: 100%;
-
-        div.container {
-            width: fit-content;
-            height: 100%;
-
-            img#logo {
-                width: fit-content;
-                height: 90% !important;
-            }
-
-            .logo-dark-mode {
-                filter: invert(0);
-            }
-
-            .logo-light-mode {
-                filter: invert(1);
-            }
-        }
-
-        #content-link {
-            max-width: 1000px;
-            width: 100%;
-        }
-
-        #menu-nav {
-            max-width: 400px;
-            width: 100%;
-        }
-
-        #content-switch {
-            width: fit-content;
-        }
-
-        .toggle {
-            position: relative;
-            width: 33px;
-            height: 20px;
-            display: inline-block;
-            margin: 15px 10px;
-        }
-
-        .toggle .slider {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            transition: 0.4s;
-            border-radius: 20px;
-        }
-
-        .toggle .slider:before {
-            position: absolute;
-            content: "";
-            height: 14px;
-            width: 14px;
-            left: 3px;
-            bottom: 3px;
-            background-color: white;
-            transition: 0.4s;
-            border-radius: 50%;
-            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
-        }
-
-        .toggle .slider {
-            background-color: #565d63;
-        }
-
-        .toggle.on .slider {
-            background-color: #4287f5;
-        }
-
-        .toggle.on .slider:before {
-            transform: translateX(14px);
-            box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
-        }
-
-        .toggle .label {
-            position: absolute;
-            left: 50px;
-            top: 4px;
-            vertical-align: middle;
-        }
-
-        input {
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            position: absolute;
-            z-index: 100;
-            cursor: pointer;
-            vertical-align: middle;
-        }
-    }
+body {
+    margin: 0;
+    padding: 0;
 }

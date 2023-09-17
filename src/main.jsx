@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import "../scss/styles.scss";
 import "@fortawesome/fontawesome-free/js/all"
-import "../js/changeTheme";
+import App from "./App";
+import "./scss/styles.scss";
+import "./js/changeTheme";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>

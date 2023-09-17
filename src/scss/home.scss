@@ -1,0 +1,81 @@
+.home {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto 1fr;
+
+    align-items: center;
+
+    height: 100vh;
+
+    overflow: hidden;
+
+    .container_home {
+        width: 100%;
+        height: 300px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap-reverse;
+
+        grid-column: 2 / 5;
+        grid-row: 2 / -1;
+
+        .presentation {
+            text-align: right;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: flex-end;
+
+            .tecnologies-img {
+                img {
+                    width: auto;
+                    height: 20px;
+
+                    margin: auto 0;
+                }
+            }
+
+            .bg-dark-mode {
+                background-color: transparent;
+            }
+            .bg-light-mode {
+                background-color: var(--bs-light);
+            }
+        }
+
+        .presentation * {
+            width: fit-content;
+        }
+
+        .perfil {
+            max-width: 300px;
+            width: 100%;
+
+            display: grid;
+            place-items: center;
+
+            #avatar {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.home.dark {
+    background: var(--background-dark);
+    background-size: cover;
+    transition-duration: 0.3s;
+}
+
+.home.light {
+    background: var(--background-light);
+    background-size: cover;
+    transition-duration: 0.3s;
+}

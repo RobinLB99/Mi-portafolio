@@ -8,7 +8,7 @@ const Switch = () => {
                 <input type="checkbox" />
                 <span className="slider"></span>
             </div>
-            <i className="label fa-solid fa-sun"></i>
+            <i id="switch-theme-icon" className="text-light label fa-solid fa-sun"></i>
         </div>
     );
 };
