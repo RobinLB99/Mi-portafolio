@@ -16,6 +16,8 @@ $(document).ready(function () {
         $("#cargo").toggleClass("bg-dark-mode bg-light-mode")
         $("#tecno").toggleClass("bg-dark-mode bg-light-mode")
         $("#github").toggleClass("bg-dark-mode bg-light-mode")
+        $("#sobre_mi").toggleClass("text-light text-dark")
+        $("#legend").toggleClass("text-light text-dark")
     });
 });
 

@@ -9,9 +9,16 @@ const Home = () => {
         <section className="seccion home dark" id="home">
             <div className="container_home">
                 <div className="presentation text-light" id="presentation">
-                    <h1 id="nombre" className="m-0 bg-dark-mode px-3">Robin Joel Lugo Boero</h1>
-                    <h4 id="cargo" className="m-0 bg-dark-mode px-3">| Full Stack Developer |</h4>
-                    <div id="tecno" className="bg-dark-mode m-0 d-flex flex-row gap-2 align-items-center tecnologies-img py-1 px-3">
+                    <h1 id="nombre" className="m-0 bg-dark-mode px-3">
+                        Robin Joel Lugo Boero
+                    </h1>
+                    <h4 id="cargo" className="m-0 bg-dark-mode px-3">
+                        | Full Stack Web & Java Developer |
+                    </h4>
+                    <div
+                        id="tecno"
+                        className="bg-dark-mode m-0 d-flex flex-row gap-2 align-items-center tecnologies-img py-1 px-3"
+                    >
                         {technologyImages}
                     </div>
                     <a
@@ -25,10 +32,16 @@ const Home = () => {
                     </a>
                 </div>
                 <picture className="perfil">
-                    <source srcSet="../../public/avatar2.webp" media="(min-width: 720px)"/>
+                    <source
+                        className="avatar"
+                        srcSet="../../public/avatar2.webp"
+                        media="(min-width: 720px)"
+                        hidden
+                    />
                     <img
                         src="../../public/avatar1.webp"
                         alt="avatar"
+                        className="avatar my-auto mx-0"
                         id="avatar"
                     />
                 </picture>
