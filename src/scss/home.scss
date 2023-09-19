@@ -70,10 +70,12 @@
     background: var(--background-dark);
     background-size: cover;
     transition-duration: 0.3s;
+    background-attachment: fixed;
 }
 
 .home.light {
     background: var(--background-light);
     background-size: cover;
     transition-duration: 0.3s;
+    background-attachment: fixed;
 }

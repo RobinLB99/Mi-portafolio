@@ -12,12 +12,13 @@ $(document).ready(function () {
         $(".presentation").toggleClass("text-light text-dark");
         $(".github").toggleClass("link-dark link-light");
         $("#home").toggleClass("dark light");
-        $("#nombre").toggleClass("bg-dark-mode bg-light-mode")
-        $("#cargo").toggleClass("bg-dark-mode bg-light-mode")
-        $("#tecno").toggleClass("bg-dark-mode bg-light-mode")
-        $("#github").toggleClass("bg-dark-mode bg-light-mode")
-        $("#sobre_mi").toggleClass("text-light text-dark")
-        $("#legend").toggleClass("text-light text-dark")
+        $("#nombre").toggleClass("bg-dark-mode bg-light-mode");
+        $("#cargo").toggleClass("bg-dark-mode bg-light-mode");
+        $("#tecno").toggleClass("bg-dark-mode bg-light-mode");
+        $("#github").toggleClass("bg-dark-mode bg-light-mode");
+        $("#sobre_mi").toggleClass("text-light text-dark");
+        $("#legend").toggleClass("text-light text-dark");
+        $("#Projects").toggleClass("dark light");
     });
 });
 

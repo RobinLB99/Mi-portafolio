@@ -3,6 +3,7 @@
 @import "./navbar.scss";
 @import "./home.scss";
 @import "./about_me.scss";
+@import "./my_projects.scss";
 
 :root {
     --transparent-dark: #ffffff2d;
@@ -18,8 +19,10 @@
             rgba(238, 238, 238, 0.441),
             rgba(226, 227, 227, 0.599)
         ),
-        url("../../public/wallpaper-light.webp"), no-repeat,
-        center;
+        url("../../public/wallpaper-light.webp"), no-repeat, center;
+
+    --bg-card-dark: #21252982; 
+    --bg-card-light: #d8d8d881;
 }
 
 * {
