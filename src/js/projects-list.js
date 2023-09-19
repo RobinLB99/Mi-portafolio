@@ -12,7 +12,9 @@ const Projects = [
             msql: "../../../public/MySQL.webp",
         },
         description: "Aplicación de gestión que cubre tres áreas principales: gestión de libros, ventas/alquiler y empleados.",
-        github: "https://github.com/RobinLB99/Tienda_de_libros",
+        links: {
+            github: "https://github.com/RobinLB99/Tienda_de_libros",
+        },
     },
     {
         img: "../../../public/img-projects/tienda.webp",
@@ -22,7 +24,9 @@ const Projects = [
             msql: "../../../public/MySQL.webp",
         },
         description: "Aplicación de gestión y administración de una tienda y sus recursos",
-        github: "https://github.com/RobinLB99/Tienda",
+        links: {
+            github: "https://github.com/RobinLB99/Tienda",
+        },
     },
     {
         img: "../../../public/img-projects/db_program_manipulator.webp",
@@ -32,7 +36,9 @@ const Projects = [
             msql: "../../../public/MySQL.webp",
         },
         description: "Aplicación de interfaz de linea de comandos con conexión a base de datos.",
-        github: "https://github.com/RobinLB99/DB_Departamento_Empleados",
+        links: {
+            github: "https://github.com/RobinLB99/DB_Departamento_Empleados",
+        },
     },
     {
         img: "../../../public/img-projects/mi-portafolio.webp",
@@ -42,7 +48,9 @@ const Projects = [
             bootstrap: "../../../public/bootstrap.webp",
         },
         description: "Portafolio personal construido en React",
-        github: "https://github.com/RobinLB99/Mi-portafolio",
+        links: {
+            github: "https://github.com/RobinLB99/Mi-portafolio",
+        }
     },
     {
         img: "../../../public/img-projects/calculadora.webp",
@@ -53,7 +61,10 @@ const Projects = [
             javascript: "../../../public/js.webp",
         },
         description: "Calculadora de operaciones básicas.",
-        github: "https://github.com/RobinLB99/Calculadora",
+        links: {
+            github: "https://github.com/RobinLB99/Calculadora",
+            web: "https://robinlb99.github.io/Calculadora",
+        }
     },
     {
         img: "../../../public/img-projects/landing-page.webp",
@@ -63,7 +74,10 @@ const Projects = [
             css: "../../../public/css-3.webp",
         },
         description: "Landing page del producto - FreeCodeCamp",
-        github: "https://github.com/RobinLB99/Landing-Page ",
+        links: {
+            github: "https://github.com/RobinLB99/Landing-Page",
+            web: "https://robinlb99.github.io/Landing-Page"
+        }
     }
 ]
 
