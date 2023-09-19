@@ -30,15 +30,19 @@ const MyProjects = () => {
                 alt={project.title}
             />
             <div className="card-body">
-                <h4 className="card-title text-light">{project.title}</h4>
-                <div className="technologies-used my-3 d-flex flex-row gap-2">
-                    {Object.entries(project.tecnologies).map(
-                        ([tec, img], tecIndex) => (
-                            <img src={img} alt={tec} key={tecIndex} />
-                        )
-                    )}
+                <div className="info">
+                    <h4 className="card-title text-light">{project.title}</h4>
+                    <div className="technologies-used my-3 d-flex flex-row gap-2">
+                        {Object.entries(project.tecnologies).map(
+                            ([tec, img], tecIndex) => (
+                                <img src={img} alt={tec} key={tecIndex} />
+                            )
+                        )}
+                    </div>
+                    <p className="card-text text-light">
+                        {project.description}
+                    </p>
                 </div>
-                <p className="card-text text-light">{project.description}</p>
                 <div className="links d-flex flex-row gap-3 align-items-center">
                     {Object.entries(project.links).map(
                         ([name, link], link_index) => (
