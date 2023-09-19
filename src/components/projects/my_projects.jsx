@@ -23,7 +23,7 @@ const MyProjects = () => {
     };
 
     const Proyectos = Projects.map((project, index) => (
-        <div key={index} className="card c-project card-dark">
+        <div key={index} className="card c-project card-dark shadow-sm">
             <img
                 className="preview-project img-fluid card-img-top"
                 src={project.img}
@@ -57,8 +57,8 @@ const MyProjects = () => {
 
     return (
         <div className="projects dark" id="Projects">
-            <h3 className="text-light">Mis proyectos</h3>
-            <div className="border opacity-50 mx-auto"></div>
+            <h3 className="project-section-title text-light">Mis proyectos</h3>
+            <div className="project-section-border border border-light opacity-50 mx-auto"></div>
             <div className="box-projects">{Proyectos}</div>
         </div>
     );

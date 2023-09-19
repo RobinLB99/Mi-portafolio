@@ -118,9 +118,10 @@ nav.navbar {
     }
 }
 
-@media (max-width: 480px) {
-    nav.navbar {
-        position: fixed !important;
-        bottom: 0 !important;
-    }
+nav.navbar.light {
+    background-color: var(--bg-light-transparent);
+}
+
+nav.navbar.dark {
+    background-color: var(--bg-dark-transparent);
 }

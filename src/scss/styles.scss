@@ -21,8 +21,12 @@
         ),
         url("../../public/wallpaper-light.webp"), no-repeat, center;
 
-    --bg-card-dark: #21252982;
-    --bg-card-light: #d8d8d881;
+    --bg-dark-transparent: #21252920;
+    --bg-light-transparent: #ffffff81;
+    --bg-card-dark-transparent: #21252982;
+    --bg-card-light-transparent: #ffffff81;
+    --bg-card-dark: #212529;
+    --bg-card-light: #ffffff;
 }
 
 * {

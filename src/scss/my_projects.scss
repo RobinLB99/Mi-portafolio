@@ -37,11 +37,20 @@
     }
 
     .c-project.card-light {
-        background-color: var(--bg-card-light);
+        background-color: var(--bg-card-light-transparent);
     }
 
     .c-project.card-dark {
+        background-color: var(--bg-card-dark-transparent);
+    }
+
+    .c-project.card-light:hover {
+        background-color: var(--bs-light);
+    }
+
+    .c-project.card-dark:hover {
         background-color: var(--bg-card-dark);
+        border-color: var(--bs-light) !important;
     }
 }
 
